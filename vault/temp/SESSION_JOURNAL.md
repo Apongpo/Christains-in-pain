@@ -1005,3 +1005,286 @@
 ## 2026-09-18 19:09:39.856Z load
 - url: http://localhost:3000/share
 
+## 2026-09-18 19:13:53.353Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Christians In Pain"}
+
+## 2026-09-18 19:13:53.356Z navigate
+- url: http://localhost:3000/
+- via: pushState
+
+## 2026-09-18 19:14:51.313Z click
+- element: {"tag":"div","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Christians In PainHomeShare Your StoryPeer SupportResourcesContact"}
+
+## 2026-09-18 19:15:13.261Z click
+- element: {"tag":"button","role":null,"ariaLabel":"Toggle menu","name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":""}
+
+## 2026-09-18 19:15:46.149Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Share Your Story"}
+
+## 2026-09-18 19:15:46.151Z navigate
+- url: http://localhost:3000/share
+- via: pushState
+
+## 2026-09-18 19:16:08.236Z click
+- element: {"tag":"p","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Christians In Pain"}
+
+## 2026-09-18 19:16:09.051Z click
+- element: {"tag":"button","role":null,"ariaLabel":"Toggle menu","name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":""}
+
+## 2026-09-18 19:16:10.639Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Home"}
+
+## 2026-09-18 19:16:10.642Z navigate
+- url: http://localhost:3000/
+- via: pushState
+
+## 2026-09-18 19:17:27.580Z click
+- element: {"tag":"div","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Christians In PainHomeShare Your StoryPeer SupportResourcesContact"}
+
+## 2026-09-18 19:17:37.684Z click
+- element: {"tag":"div","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Christians In PainHomeShare Your StoryPeer SupportResourcesContact"}
+
+## 2026-09-18 19:19:59.421Z click
+- element: {"tag":"button","role":null,"ariaLabel":"Toggle menu","name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":""}
+
+## 2026-09-18 19:20:00.662Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Share Your Story"}
+
+## 2026-09-18 19:20:00.666Z navigate
+- url: http://localhost:3000/share
+- via: pushState
+
+## 2026-09-18 19:21:08.890Z click
+- element: {"tag":"button","role":null,"ariaLabel":"Toggle menu","name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":""}
+
+## 2026-09-18 19:21:10.699Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Peer Support"}
+
+## 2026-09-18 19:21:10.700Z navigate
+- url: http://localhost:3000/sessions
+- via: pushState
+
+## 2026-09-18 19:21:28.907Z load
+- url: http://localhost:3000/sessions
+
+## 2026-09-18 19:22:17.416Z click
+- element: {"tag":"button","role":null,"ariaLabel":"Toggle menu","name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":""}
+
+## 2026-09-18 19:22:18.715Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Peer Support"}
+
+## 2026-09-18 19:22:18.716Z navigate
+- url: http://localhost:3000/sessions
+- via: replaceState
+
+## 2026-09-18 19:23:18.412Z click
+- element: {"tag":"button","role":null,"ariaLabel":"Toggle menu","name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":""}
+
+## 2026-09-18 19:23:19.558Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Home"}
+
+## 2026-09-18 19:23:19.559Z navigate
+- url: http://localhost:3000/
+- via: pushState
+
+## 2026-09-18 19:25:29.776Z click
+- element: {"tag":"div","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Disclaimer:We are not health-care professionals, neither do we replace your health-care team. Please continue working with your team, if you have one. In case of a health crisis, we ask that you go to the Emergency Room that’s nearest to you or contact the Crisis Helpline available in your area."}
+
+## 2026-09-18 19:26:34.037Z load
+- url: http://localhost:3000/share
+
+## 2026-09-18 19:26:37.137Z click
+- element: {"tag":"button","role":null,"ariaLabel":"Toggle menu","name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":""}
+
+## 2026-09-18 19:26:38.332Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Home"}
+
+## 2026-09-18 19:26:38.336Z navigate
+- url: http://localhost:3000/
+- via: pushState
+
+## 2026-09-18 19:27:13.703Z click
+- element: {"tag":"div","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Confidential by defaultYour story is shared only with trained peer leaders unless you choose otherwise.Led by peers who get itEvery session is guided by believers who have lived through illness and come out trusting Christ.Grounded in ScripturePrayer and conversation are anchored in the Bible, not generic advice or quick fixes."}
+
+## 2026-09-18 19:28:24.960Z click
+- element: {"tag":"button","role":null,"ariaLabel":"Toggle menu","name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":""}
+
+## 2026-09-18 19:28:26.589Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Contact"}
+
+## 2026-09-18 19:28:26.590Z navigate
+- url: http://localhost:3000/contact
+- via: pushState
+
+## 2026-09-18 19:29:51.853Z click
+- element: {"tag":"button","role":null,"ariaLabel":"Toggle menu","name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":""}
+
+## 2026-09-18 19:30:10.011Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Home"}
+
+## 2026-09-18 19:30:10.013Z navigate
+- url: http://localhost:3000/
+- via: pushState
+
+## 2026-09-18 19:30:42.620Z click
+- element: {"tag":"button","role":null,"ariaLabel":"Toggle menu","name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":""}
+
+## 2026-09-18 19:30:43.555Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Contact"}
+
+## 2026-09-18 19:30:43.556Z navigate
+- url: http://localhost:3000/contact
+- via: pushState
+
+## 2026-09-18 19:30:53.421Z load
+- url: http://localhost:3000/contact
+
+## 2026-09-18 19:31:15.732Z click
+- element: {"tag":"button","role":null,"ariaLabel":"Toggle menu","name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":""}
+
+## 2026-09-18 19:31:17.195Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Contact"}
+
+## 2026-09-18 19:31:17.210Z navigate
+- url: http://localhost:3000/contact
+- via: pushState
+
+## 2026-09-18 19:31:37.267Z load
+- url: http://localhost:3000/contact
+
+## 2026-09-18 19:31:41.059Z navigate
+- url: http://localhost:3000/
+- via: popstate
+
+## 2026-09-18 19:32:03.096Z click
+- element: {"tag":"div","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"© 2026 Christians In Pain. A faith-based peer support ministry."}
+
+## 2026-09-18 19:32:22.896Z click
+- element: {"tag":"div","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"© 2026 Christians In Pain. A faith-based peer support ministry."}
+
+## 2026-09-18 19:32:56.891Z click
+- element: {"tag":"button","role":null,"ariaLabel":"Toggle menu","name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":""}
+
+## 2026-09-18 19:32:58.553Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Contact"}
+
+## 2026-09-18 19:32:58.554Z navigate
+- url: http://localhost:3000/contact
+- via: pushState
+
+## 2026-09-18 19:33:58.822Z load
+- url: http://localhost:3000/contact
+
+## 2026-09-18 19:34:27.561Z click
+- element: {"tag":"div","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"© 2026 Christians In Pain. A faith-based peer support."}
+
+## 2026-09-18 19:34:36.553Z click
+- element: {"tag":"button","role":null,"ariaLabel":"Toggle menu","name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":""}
+
+## 2026-09-18 19:34:37.836Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Share Your Story"}
+
+## 2026-09-18 19:34:37.837Z navigate
+- url: http://localhost:3000/share
+- via: pushState
+
+## 2026-09-18 19:35:16.409Z click
+- element: {"tag":"button","role":null,"ariaLabel":"Toggle menu","name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":""}
+
+## 2026-09-18 19:35:17.539Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Home"}
+
+## 2026-09-18 19:35:17.550Z navigate
+- url: http://localhost:3000/
+- via: pushState
+
+## 2026-09-18 19:35:46.089Z click
+- element: {"tag":"div","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"© 2026 Christians In Pain. A faith-based peer support."}
+
+## 2026-09-18 19:36:54.636Z load
+- url: http://localhost:3000/
+
+## 2026-09-18 19:37:05.324Z load
+- url: http://localhost:3000/contact
+
+## 2026-09-18 19:46:29.900Z load
+- url: http://localhost:3000/
+
+## 2026-09-18 19:47:25.735Z load
+- url: http://localhost:3000/
+
+## 2026-09-18 19:47:45.847Z load
+- url: http://localhost:3000/
+
+## 2026-09-18 19:50:16.581Z load
+- url: http://localhost:3000/
+
+## 2026-09-18 19:53:41.514Z load
+- url: http://localhost:3000/
+
+## 2026-09-18 19:54:56.762Z load
+- url: http://localhost:3000/
+
+## 2026-09-18 19:55:25.521Z load
+- url: http://localhost:3000/
+
+## 2026-09-18 19:55:56.594Z load
+- url: http://localhost:3000/
+
+## 2026-09-18 19:56:25.594Z load
+- url: http://localhost:3000/
+
+## 2026-09-18 19:57:25.768Z load
+- url: http://localhost:3000/
+
+## 2026-09-18 19:57:31.403Z load
+- url: http://localhost:3000/
+
+## 2026-09-18 19:59:26.235Z load
+- url: http://localhost:3000/
+
+## 2026-09-18 20:00:25.620Z load
+- url: http://localhost:3000/
+
+## 2026-09-18 20:01:26.021Z load
+- url: http://localhost:3000/
+
+## 2026-09-18 20:02:25.655Z load
+- url: http://localhost:3000/
+
+## 2026-09-18 20:03:25.852Z load
+- url: http://localhost:3000/
+
+## 2026-09-18 20:04:26.042Z load
+- url: http://localhost:3000/
+
+## 2026-09-18 20:05:25.780Z load
+- url: http://localhost:3000/
+
+## 2026-09-18 20:06:25.631Z load
+- url: http://localhost:3000/
+
+## 2026-09-18 20:07:25.622Z load
+- url: http://localhost:3000/
+
+## 2026-09-18 20:07:57.691Z load
+- url: http://localhost:3000/
+
+## 2026-09-18 20:08:17.681Z load
+- url: http://localhost:3000/
+
+## 2026-09-18 20:09:02.800Z load
+- url: http://localhost:3000/
+
+## 2026-09-18 20:09:12.793Z load
+- url: http://localhost:3000/
+
+## 2026-09-18 20:09:22.754Z load
+- url: http://localhost:3000/
+
+## 2026-09-18 20:10:25.794Z load
+- url: http://localhost:3000/
+
+## 2026-09-18 20:12:25.819Z load
+- url: http://localhost:3000/
+

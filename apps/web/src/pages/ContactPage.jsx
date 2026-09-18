@@ -37,13 +37,13 @@ const ContactPage = () => {
         <SiteLayout>
             <Helmet>
                 <title>Contact &amp; Join the Community | Christians In Pain</title>
-                <meta name="description" content="Reach out to ChristiansinPain — join the peer support community, volunteer to lead a session, plan a visit, ask about one-on-one support, or simply ask a question. No account needed." />
+                <meta name="description" content="Reach out to ChristiansinPain — join the peer support community, ask about one-on-one support, or simply ask a question. No account needed." />
             </Helmet>
 
             <PageHero
                 eyebrow="Contact & Join the Community"
                 title="Say hello. We will guide you in."
-                blurb="Whether you want to join a session, volunteer to lead one, be baptized, or just ask an honest question about faith and health, this reaches a real person on our peer support team."
+                blurb="Whether you want to join a session, share your story, or just ask an honest question about faith and health, your message reaches a trained peer supporter who is ready to guide you."
                 scripture="&ldquo;Bear one another&rsquo;s burdens, and so fulfill the law of Christ.&rdquo; — Galatians 6:2"
                 image={HERO}
             />
@@ -124,8 +124,7 @@ const ContactPage = () => {
             </Section>
 
             <Section width="narrow" className="py-12 text-center">
-                <p className="text-sm font-semibold text-foreground">Disclaimer:</p>
-                <p className="mt-2 text-sm text-muted-foreground">
+                <p className="text-sm text-muted-foreground">
                     We are not health-care professionals, neither do we replace your health-care team. Please
                     continue working with your team, if you have one. In case of a health crisis, we ask that you
                     go to the Emergency Room that&rsquo;s nearest to you or contact the Crisis Helpline available

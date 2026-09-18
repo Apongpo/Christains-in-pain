@@ -80,8 +80,7 @@ const ShareStoryPage = () => {
                         <p className="font-display text-lg italic text-muted-foreground">
                             &ldquo;Bear one another’s burdens, and so fulfill the law of Christ.&rdquo; — Galatians 6:2
                         </p>
-                        <p className="text-sm font-semibold text-foreground">Disclaimer:</p>
-                        <p className="mt-2 text-sm text-muted-foreground">
+                        <p className="text-sm text-muted-foreground">
                             We are not health-care professionals, neither do we replace your health-care team. Please
                             continue working with your team, if you have one. In case of a health crisis, we ask that you
                             go to the Emergency Room that&rsquo;s nearest to you or contact the Crisis Helpline available

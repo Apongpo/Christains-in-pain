@@ -197,8 +197,7 @@ const HomePage = () => <SiteLayout>
 
         {/* Disclaimer */}
         <Section width="narrow" className="py-12 text-center">
-            <p className="text-sm font-semibold text-foreground">Disclaimer:</p>
-            <p className="mt-2 text-sm text-muted-foreground">
+            <p className="text-sm text-muted-foreground">
                 We are not health-care professionals, neither do we replace your health-care team. Please
                 continue working with your team, if you have one. In case of a health crisis, we ask that you
                 go to the Emergency Room that&rsquo;s nearest to you or contact the Crisis Helpline available

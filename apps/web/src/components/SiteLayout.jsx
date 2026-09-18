@@ -91,7 +91,7 @@ const SiteLayout = ({
                     </div>
                 </Section>
                 <div className="border-t border-white/10 py-6 text-center text-xs">
-                    &copy; {new Date().getFullYear()} Christians In Pain. A faith-based peer support ministry.
+                    &copy; {new Date().getFullYear()} Christians In Pain.
                 </div>
             </footer>
         </div>;
