@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { Menu, X, Flame } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+import logo from '@/assets/logo.png';
 const links = [{
   to: '/',
   label: 'Home'
@@ -33,9 +34,7 @@ const SiteLayout = ({
             <header className="sticky top-0 z-40 bg-navy/95 backdrop-blur border-b border-white/10">
                 <Section width="wide" className="flex items-center justify-between py-4">
                     <Link to="/" className="flex items-center gap-3 text-cream">
-                        <span className="grid h-11 w-11 place-items-center border border-gold text-gold">
-                            <Flame className="h-5 w-5" strokeWidth={1.75} />
-                        </span>
+                        <img src={logo} alt="Christians In Pain logo" className="h-11 w-11" />
                         <span className="font-display text-lg font-bold tracking-tight">
                             Christians In Pain
                         </span>

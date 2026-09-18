@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
-import { Loader2, Check, Calendar, Clock, Users, User, Video } from 'lucide-react';
+import { Loader2, Check, Users, User, Video } from 'lucide-react';
 import Reveal from '@/components/Reveal';
 import pb from '@/lib/pocketbaseClient';
 import SiteLayout, { Section } from '@/components/SiteLayout';
@@ -21,46 +21,36 @@ const sessions = [
         type: 'One-on-one',
         icon: User,
         title: 'Private Peer Prayer Call',
-        day: 'Mon', date: 'Mar 10',
-        time: '7:00 PM ET', mode: 'Online \u00b7 30 min',
+        mode: 'Online \u00b7 30 min',
         blurb: 'A confidential 30-minute call with a trained peer. Bring whatever you are carrying \u2014 we pray, listen, and sit with you in it.',
-        spots: '1 spot open',
     },
     {
         type: 'Group',
         icon: Users,
         title: 'Chronic Illness Support Circle',
-        day: 'Wed', date: 'Mar 12',
-        time: '8:00 PM ET', mode: 'Online \u00b7 60 min',
+        mode: 'Online \u00b7 60 min',
         blurb: 'A small group for believers living with long-term illness. We share honestly, study a psalm together, and pray for one another by name.',
-        spots: '5 spots open',
     },
     {
         type: 'Group',
         icon: Users,
         title: 'Grief & Loss Walking Group',
-        day: 'Wed', date: 'Mar 12',
-        time: '6:30 PM ET', mode: 'Online \u00b7 60 min',
+        mode: 'Online \u00b7 60 min',
         blurb: 'For those mourning a loved one. A gentle, Scripture-led space where grief is welcomed and hope in Christ is quietly rebuilt.',
-        spots: '5 spots open',
     },
     {
         type: 'One-on-one',
         icon: User,
         title: 'New Diagnosis Conversation',
-        day: 'Fri', date: 'Mar 14',
-        time: '12:00 PM ET', mode: 'Online \u00b7 45 min',
+        mode: 'Online \u00b7 45 min',
         blurb: 'Just received a hard diagnosis? Talk with a peer who has been there \u2014 about fear, faith, and what to hold on to next.',
-        spots: '1 spot open',
     },
     {
         type: 'Group',
         icon: Users,
         title: 'Mental Health & Faith Group',
-        day: 'Fri', date: 'Mar 14',
-        time: '7:00 PM ET', mode: 'Online \u00b7 60 min',
+        mode: 'Online \u00b7 60 min',
         blurb: 'Anxiety, depression, and faith held together. A peer-led group anchored in truth and grace, not shame or quick fixes.',
-        spots: '5 spots open',
     },
 ];
 
@@ -114,7 +104,7 @@ const SessionsPage = () => {
             <PageHero
                 eyebrow="Peer Support Sessions"
                 title="Find a session and come as you are"
-                blurb="One-on-one and small group gatherings led by a trained peer who understands what it means to live with a long-term illness yet still trusts God. Confidential, low-pressure, and open to anyone."
+                blurb="One-on-one and small group gatherings led by a trained peer who understands what it means to live with a long-term illness yet still trusts God. Confidential, no-pressure, and open to anyone."
                 scripture="&ldquo;Where two or three are gathered in my name, there am I among them.&rdquo; — Matthew 18:20"
                 image={NIGHT}
             />
@@ -142,13 +132,10 @@ const SessionsPage = () => {
                                     <span className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-[hsl(var(--gold))]">
                                         <s.icon className="h-4 w-4" /> {s.type}
                                     </span>
-                                    <span className="text-xs text-muted-foreground">{s.spots}</span>
                                 </div>
                                 <h3 className="mt-5 font-display text-2xl font-bold leading-snug">{s.title}</h3>
                                 <p className="mt-3 flex-1 text-muted-foreground">{s.blurb}</p>
                                 <dl className="mt-6 space-y-2 border-t border-border pt-5 text-sm text-muted-foreground">
-                                    <div className="flex items-center gap-2"><Calendar className="h-4 w-4 text-[hsl(var(--gold))]" /> {s.day}, {s.date}</div>
-                                    <div className="flex items-center gap-2"><Clock className="h-4 w-4 text-[hsl(var(--gold))]" /> {s.time}</div>
                                     <div className="flex items-center gap-2"><Video className="h-4 w-4 text-[hsl(var(--gold))]" /> {s.mode}</div>
                                 </dl>
                                 <button
@@ -165,10 +152,12 @@ const SessionsPage = () => {
             </Section>
 
             <Section width="narrow" className="py-12 text-center">
-                <p className="text-sm text-muted-foreground">
-                    We are not Healthcare professionals, neither do we replace your Healthcare team. Please,
-                    continue working with your team&mdash;if you have one&mdash;and in case of any medical
-                    emergency, we ask that you contact the crisis line available in your area.
+                <p className="text-sm font-semibold text-foreground">Disclaimer:</p>
+                <p className="mt-2 text-sm text-muted-foreground">
+                    We are not health-care professionals, neither do we replace your health-care team. Please
+                    continue working with your team, if you have one. In case of a health crisis, we ask that you
+                    go to the Emergency Room that&rsquo;s nearest to you or contact the Crisis Helpline available
+                    in your area.
                 </p>
             </Section>
 

@@ -53,7 +53,7 @@ const ShareStoryPage = () => {
             <PageHero
                 eyebrow="Share Your Story / Prayer Request"
                 title="Tell us what you are facing"
-                blurb="Whatever you are carrying — a diagnosis, a long road, a heavy mind, a quiet grief — you can name it here. Request prayer, peer support, or simply be heard. No account, no judgment."
+                blurb="Whether you are carrying a diagnosis, a heavy heart, a crushed spirit or a quiet grief, you can share it here. Request prayer, peer support, or simply be heard. No account. No judgment."
                 scripture="&ldquo;Cast all your anxieties on him, because he cares for you.&rdquo; — 1 Peter 5:7"
                 image={CIRCLE}
             />
@@ -80,10 +80,12 @@ const ShareStoryPage = () => {
                         <p className="font-display text-lg italic text-muted-foreground">
                             &ldquo;Bear one another’s burdens, and so fulfill the law of Christ.&rdquo; — Galatians 6:2
                         </p>
-                        <p className="text-sm text-muted-foreground">
-                            We are not Healthcare professionals, neither do we replace your Healthcare team. Please,
-                            continue working with your team&mdash;if you have one&mdash;and in case of any medical
-                            emergency, we ask that you contact the crisis line available in your area.
+                        <p className="text-sm font-semibold text-foreground">Disclaimer:</p>
+                        <p className="mt-2 text-sm text-muted-foreground">
+                            We are not health-care professionals, neither do we replace your health-care team. Please
+                            continue working with your team, if you have one. In case of a health crisis, we ask that you
+                            go to the Emergency Room that&rsquo;s nearest to you or contact the Crisis Helpline available
+                            in your area.
                         </p>
                     </div>
                 </div>

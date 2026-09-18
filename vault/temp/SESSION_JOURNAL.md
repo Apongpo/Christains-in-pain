@@ -581,3 +581,427 @@
 - url: http://localhost:3000/share
 - via: pushState
 
+## 2026-09-18 06:34:46.578Z load
+- url: http://localhost:3000/resources
+
+## 2026-09-18 06:34:49.326Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Home"}
+
+## 2026-09-18 06:34:49.341Z navigate
+- url: http://localhost:3000/
+- via: pushState
+
+## 2026-09-18 06:37:24.994Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Find a peer support session "}
+
+## 2026-09-18 06:37:24.996Z navigate
+- url: http://localhost:3000/sessions
+- via: pushState
+
+## 2026-09-18 06:40:06.487Z load
+- url: http://localhost:3000/share
+
+## 2026-09-18 06:40:15.640Z window.error
+- message: Uncaught ReferenceError: Flame is not defined
+- source: http://localhost:3000/src/components/SiteLayout.jsx?t=1789713613701
+- line: 45
+- col: 154
+- stack: 
+    ReferenceError: Flame is not defined
+        at SiteLayout (http://localhost:3000/src/components/SiteLayout.jsx?t=1789713613701:45:154)
+        at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:11596:26)
+        at updateFunctionComponent (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:14630:28)
+        at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:15972:22)
+        at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:3680:22)
+        at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:3705:24)
+        at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:3739:39)
+        at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:19818:15)
+        at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:19251:20)
+        at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:19190:13)
+
+## 2026-09-18 06:40:15.656Z window.error
+- message: Uncaught ReferenceError: Flame is not defined
+- source: http://localhost:3000/src/components/SiteLayout.jsx?t=1789713613701
+- line: 45
+- col: 154
+- stack: 
+    ReferenceError: Flame is not defined
+        at SiteLayout (http://localhost:3000/src/components/SiteLayout.jsx?t=1789713613701:45:154)
+        at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:11596:26)
+        at updateFunctionComponent (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:14630:28)
+        at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:15972:22)
+        at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:3680:22)
+        at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:3705:24)
+        at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:3739:39)
+        at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:19818:15)
+        at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:19251:20)
+        at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:19190:13)
+
+## 2026-09-18 06:40:15.662Z console.error
+- text: 
+    The above error occurred in the <SiteLayout> component:
+    
+        at SiteLayout (http://localhost:3000/src/components/SiteLayout.jsx?t=1789713613701:37:3)
+        at ShareStoryPage (http://localhost:3000/src/pages/ShareStoryPage.jsx?t=1789659996135:15:27)
+        at RenderedRoute (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=d50fc13d:6647:26)
+        at Routes (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=d50fc13d:7572:3)
+        at Router (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=d50fc13d:7511:13)
+        at BrowserRouter (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=d50fc13d:10816:3)
+        at App
+    
+    Consider adding an error boundary to your tree to customize error handling behavior.
+    Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+
+## 2026-09-18 06:40:15.672Z unhandledrejection
+- message: Flame is not defined
+- stack: 
+    ReferenceError: Flame is not defined
+        at SiteLayout (http://localhost:3000/src/components/SiteLayout.jsx?t=1789713613701:45:154)
+        at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:11596:26)
+        at updateFunctionComponent (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:14630:28)
+        at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:15972:22)
+        at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:19806:22)
+        at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:19251:20)
+        at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:19190:13)
+        at renderRootSync (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:19169:15)
+        at recoverFromConcurrentError (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:18786:28)
+        at performSyncWorkOnRoot (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:18932:28)
+
+## 2026-09-18 06:40:15.974Z root.empty
+- url: http://localhost:3000/share
+
+## 2026-09-18 06:40:15.715Z window.error
+- message: Uncaught ReferenceError: Flame is not defined
+- source: http://localhost:3000/src/components/SiteLayout.jsx?t=1789713613701
+- line: 45
+- col: 154
+- stack: 
+    ReferenceError: Flame is not defined
+        at SiteLayout (http://localhost:3000/src/components/SiteLayout.jsx?t=1789713613701:45:154)
+        at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:11596:26)
+        at updateFunctionComponent (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:14630:28)
+        at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:15972:22)
+        at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:3680:22)
+        at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:3705:24)
+        at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:3739:39)
+        at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:19818:15)
+        at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:19251:20)
+        at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:19190:13)
+
+## 2026-09-18 06:40:15.731Z window.error
+- message: Uncaught ReferenceError: Flame is not defined
+- source: http://localhost:3000/src/components/SiteLayout.jsx?t=1789713613701
+- line: 45
+- col: 154
+- stack: 
+    ReferenceError: Flame is not defined
+        at SiteLayout (http://localhost:3000/src/components/SiteLayout.jsx?t=1789713613701:45:154)
+        at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:11596:26)
+        at updateFunctionComponent (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:14630:28)
+        at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:15972:22)
+        at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:3680:22)
+        at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:3705:24)
+        at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:3739:39)
+        at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:19818:15)
+        at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:19251:20)
+        at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:19190:13)
+
+## 2026-09-18 06:40:15.733Z console.error
+- text: 
+    The above error occurred in the <SiteLayout> component:
+    
+        at SiteLayout (http://localhost:3000/src/components/SiteLayout.jsx?t=1789713613701:37:3)
+        at SessionsPage (http://localhost:3000/src/pages/SessionsPage.jsx?t=1789659996135:79:27)
+        at RenderedRoute (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=d50fc13d:6647:26)
+        at Routes (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=d50fc13d:7572:3)
+        at Router (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=d50fc13d:7511:13)
+        at BrowserRouter (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=d50fc13d:10816:3)
+        at App
+    
+    Consider adding an error boundary to your tree to customize error handling behavior.
+    Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+
+## 2026-09-18 06:40:15.747Z unhandledrejection
+- message: Flame is not defined
+- stack: 
+    ReferenceError: Flame is not defined
+        at SiteLayout (http://localhost:3000/src/components/SiteLayout.jsx?t=1789713613701:45:154)
+        at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:11596:26)
+        at updateFunctionComponent (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:14630:28)
+        at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:15972:22)
+        at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:19806:22)
+        at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:19251:20)
+        at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:19190:13)
+        at renderRootSync (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:19169:15)
+        at recoverFromConcurrentError (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:18786:28)
+        at performSyncWorkOnRoot (http://localhost:3000/node_modules/.vite/deps/chunk-OGKD6Q5V.js?v=ad1c35f9:18932:28)
+
+## 2026-09-18 06:40:16.048Z root.empty
+- url: http://localhost:3000/sessions
+
+## 2026-09-18 06:40:31.532Z load
+- url: http://localhost:3000/share
+
+## 2026-09-18 06:41:01.907Z load
+- url: http://localhost:3000/share
+
+## 2026-09-18 06:50:09.218Z console.error
+- text: [vite] Failed to reload /src/components/SiteLayout.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+
+## 2026-09-18 06:50:09.248Z console.error
+- text: [vite] Failed to reload /src/components/SiteLayout.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+
+## 2026-09-18 06:50:28.256Z load
+- url: http://localhost:3000/sessions
+
+## 2026-09-18 06:50:32.834Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Home"}
+
+## 2026-09-18 06:50:32.840Z navigate
+- url: http://localhost:3000/
+- via: pushState
+
+## 2026-09-18 06:50:33.990Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Share Your Story"}
+
+## 2026-09-18 06:50:33.991Z navigate
+- url: http://localhost:3000/share
+- via: pushState
+
+## 2026-09-18 06:50:34.958Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Peer Support"}
+
+## 2026-09-18 06:50:34.959Z navigate
+- url: http://localhost:3000/sessions
+- via: pushState
+
+## 2026-09-18 06:50:49.894Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Christians In Pain"}
+
+## 2026-09-18 06:50:49.914Z navigate
+- url: http://localhost:3000/
+- via: pushState
+
+## 2026-09-18 06:50:58.006Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Christians In Pain"}
+
+## 2026-09-18 06:50:58.008Z navigate
+- url: http://localhost:3000/
+- via: replaceState
+
+## 2026-09-18 06:50:59.777Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Share your story "}
+
+## 2026-09-18 06:50:59.778Z navigate
+- url: http://localhost:3000/share
+- via: pushState
+
+## 2026-09-18 06:51:00.918Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Christians In Pain"}
+
+## 2026-09-18 06:51:00.918Z navigate
+- url: http://localhost:3000/
+- via: pushState
+
+## 2026-09-18 06:51:54.940Z load
+- url: http://localhost:3000/sessions
+
+## 2026-09-18 06:51:55.088Z load
+- url: http://localhost:3000/
+
+## 2026-09-18 06:52:02.672Z load
+- url: http://localhost:3000/
+
+## 2026-09-18 07:10:57.396Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Home"}
+
+## 2026-09-18 07:10:57.428Z navigate
+- url: http://localhost:3000/
+- via: pushState
+
+## 2026-09-18 07:10:59.052Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Share Your Story"}
+
+## 2026-09-18 07:10:59.054Z navigate
+- url: http://localhost:3000/share
+- via: pushState
+
+## 2026-09-18 07:10:59.760Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Contact"}
+
+## 2026-09-18 07:10:59.761Z navigate
+- url: http://localhost:3000/contact
+- via: pushState
+
+## 2026-09-18 10:13:00.859Z click
+- element: {"tag":"button","role":null,"ariaLabel":"Toggle menu","name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":""}
+
+## 2026-09-18 10:13:03.782Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Peer Support"}
+
+## 2026-09-18 10:13:03.795Z navigate
+- url: http://localhost:3000/sessions
+- via: pushState
+
+## 2026-09-18 10:13:42.635Z click
+- element: {"tag":"button","role":null,"ariaLabel":"Toggle menu","name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":""}
+
+## 2026-09-18 10:13:43.924Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Home"}
+
+## 2026-09-18 10:13:43.924Z navigate
+- url: http://localhost:3000/
+- via: pushState
+
+## 2026-09-18 10:15:05.878Z click
+- element: {"tag":"button","role":null,"ariaLabel":"Toggle menu","name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":""}
+
+## 2026-09-18 10:15:08.209Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Peer Support"}
+
+## 2026-09-18 10:15:08.211Z navigate
+- url: http://localhost:3000/sessions
+- via: pushState
+
+## 2026-09-18 10:15:38.879Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Join a Session"}
+
+## 2026-09-18 10:15:39.014Z focus
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":null,"id":"jname","placeholder":"Your name","label":"Name","value":"","valueLength":0,"text":""}
+
+## 2026-09-18 10:15:41.069Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Close"}
+
+## 2026-09-18 10:15:48.120Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Join a Session"}
+
+## 2026-09-18 10:15:48.179Z focus
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":null,"id":"jname","placeholder":"Your name","label":"Name","value":"","valueLength":0,"text":""}
+
+## 2026-09-18 10:15:50.206Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Close"}
+
+## 2026-09-18 10:17:09.604Z click
+- element: {"tag":"div","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Peer Support SessionsFind a session and come as you areOne-on-one and small group gatherings led by a trained peer who understands what it means to live with a long-term illness yet still trusts God. Confidential, low-pressure, and open to anyone.“Where two or three are gathered in my name, there am I among them.” — Matthew 18:20"}
+
+## 2026-09-18 10:18:04.355Z click
+- element: {"tag":"button","role":null,"ariaLabel":"Toggle menu","name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":""}
+
+## 2026-09-18 10:18:07.532Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Share Your Story"}
+
+## 2026-09-18 10:18:07.534Z navigate
+- url: http://localhost:3000/share
+- via: pushState
+
+## 2026-09-18 10:19:09.417Z click
+- element: {"tag":"button","role":null,"ariaLabel":"Toggle menu","name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":""}
+
+## 2026-09-18 10:19:10.686Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Home"}
+
+## 2026-09-18 10:19:10.688Z navigate
+- url: http://localhost:3000/
+- via: pushState
+
+## 2026-09-18 10:19:27.214Z click
+- element: {"tag":"div","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"We are not Healthcare professionals, neither do we replace your Healthcare team. Please, continue working with your team—if you have one—and in case of any medical emergency, we ask that you contact the crisis line available in your area."}
+
+## 2026-09-18 10:20:16.456Z click
+- element: {"tag":"div","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Confidential by defaultYour story is shared only with trained peer leaders unless you choose otherwise.Led by peers who get itEvery session is guided by believers who have lived through illness and come out trusting Christ.Grounded in ScripturePrayer and conversation are anchored in the Bible, not generic advice or quick fixes."}
+
+## 2026-09-18 10:22:29.622Z click
+- element: {"tag":"button","role":null,"ariaLabel":"Toggle menu","name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":""}
+
+## 2026-09-18 10:22:31.090Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Peer Support"}
+
+## 2026-09-18 10:22:31.091Z navigate
+- url: http://localhost:3000/sessions
+- via: pushState
+
+## 2026-09-18 10:23:25.300Z click
+- element: {"tag":"button","role":null,"ariaLabel":"Toggle menu","name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":""}
+
+## 2026-09-18 10:23:26.711Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Home"}
+
+## 2026-09-18 10:23:26.712Z navigate
+- url: http://localhost:3000/
+- via: pushState
+
+## 2026-09-18 10:24:47.887Z load
+- url: http://localhost:3000/sessions
+
+## 2026-09-18 10:24:48.635Z navigate
+- url: http://localhost:3000/sessions
+- via: replaceState
+
+## 2026-09-18 10:26:02.910Z load
+- url: http://localhost:3000/share
+
+## 2026-09-18 10:26:03.774Z navigate
+- url: http://localhost:3000/share
+- via: replaceState
+
+## 2026-09-18 10:26:08.442Z focus
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"stopic","placeholder":null,"label":"What are you facing?","value":"Chronic illness/disease","valueLength":23,"text":"Chronic illness/diseaseMental healthFaith and doubtNew diagnosisOther"}
+
+## 2026-09-18 10:26:08.536Z click
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"stopic","placeholder":null,"label":"What are you facing?","value":"Chronic illness/disease","valueLength":23,"text":"Chronic illness/diseaseMental healthFaith and doubtNew diagnosisOther"}
+
+## 2026-09-18 10:26:09.332Z click
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"stopic","placeholder":null,"label":"What are you facing?","value":"Chronic illness/disease","valueLength":23,"text":"Chronic illness/diseaseMental healthFaith and doubtNew diagnosisOther"}
+
+## 2026-09-18 10:26:09.696Z click
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"stopic","placeholder":null,"label":"What are you facing?","value":"Chronic illness/disease","valueLength":23,"text":"Chronic illness/diseaseMental healthFaith and doubtNew diagnosisOther"}
+
+## 2026-09-18 10:26:11.646Z click
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"stopic","placeholder":null,"label":"What are you facing?","value":"Chronic illness/disease","valueLength":23,"text":"Chronic illness/diseaseMental healthFaith and doubtNew diagnosisOther"}
+
+## 2026-09-18 10:26:29.269Z blur
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"stopic","placeholder":null,"label":"What are you facing?","value":"Chronic illness/disease","valueLength":23,"text":"Chronic illness/diseaseMental healthFaith and doubtNew diagnosisOther"}
+
+## 2026-09-18 10:26:29.311Z focus
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"stopic","placeholder":null,"label":"What are you facing?","value":"Chronic illness/disease","valueLength":23,"text":"Chronic illness/diseaseMental healthFaith and doubtNew diagnosisOther"}
+
+## 2026-09-18 10:26:29.320Z blur
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"stopic","placeholder":null,"label":"What are you facing?","value":"Chronic illness/disease","valueLength":23,"text":"Chronic illness/diseaseMental healthFaith and doubtNew diagnosisOther"}
+
+## 2026-09-18 10:26:29.390Z focus
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"stopic","placeholder":null,"label":"What are you facing?","value":"Chronic illness/disease","valueLength":23,"text":"Chronic illness/diseaseMental healthFaith and doubtNew diagnosisOther"}
+
+## 2026-09-18 10:26:32.513Z blur
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"stopic","placeholder":null,"label":"What are you facing?","value":"Chronic illness/disease","valueLength":23,"text":"Chronic illness/diseaseMental healthFaith and doubtNew diagnosisOther"}
+
+## 2026-09-18 10:35:39.278Z focus
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"stopic","placeholder":null,"label":"What are you facing?","value":"Chronic illness/disease","valueLength":23,"text":"Chronic illness/diseaseMental healthFaith and doubtNew diagnosisOther"}
+
+## 2026-09-18 10:35:39.284Z blur
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"stopic","placeholder":null,"label":"What are you facing?","value":"Chronic illness/disease","valueLength":23,"text":"Chronic illness/diseaseMental healthFaith and doubtNew diagnosisOther"}
+
+## 2026-09-18 10:35:39.601Z focus
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"stopic","placeholder":null,"label":"What are you facing?","value":"Chronic illness/disease","valueLength":23,"text":"Chronic illness/diseaseMental healthFaith and doubtNew diagnosisOther"}
+
+## 2026-09-18 10:35:42.102Z blur
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"stopic","placeholder":null,"label":"What are you facing?","value":"Chronic illness/disease","valueLength":23,"text":"Chronic illness/diseaseMental healthFaith and doubtNew diagnosisOther"}
+
+## 2026-09-18 11:29:11.476Z load
+- url: http://localhost:3000/contact
+
+## 2026-09-18 11:35:54.722Z click
+- element: {"tag":"div","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":""}
+
+## 2026-09-18 19:09:20.170Z load
+- url: http://localhost:3000/contact
+
+## 2026-09-18 19:09:30.912Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Share Your Story"}
+
+## 2026-09-18 19:09:30.914Z navigate
+- url: http://localhost:3000/share
+- via: pushState
+
+## 2026-09-18 19:09:39.856Z load
+- url: http://localhost:3000/share
+
