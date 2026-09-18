@@ -1,0 +1,583 @@
+## 2026-09-17 15:21:20.758Z load
+- url: http://localhost:3000/
+
+## 2026-09-17 15:26:28.230Z load
+- url: http://localhost:3000/
+
+## 2026-09-17 15:26:28.993Z navigate
+- url: http://localhost:3000/
+- via: replaceState
+
+## 2026-09-17 15:29:04.373Z click
+- element: {"tag":"span","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Psalm 34:18"}
+
+## 2026-09-17 15:29:24.145Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Reach Out DirectlyNot sure where to start? Send a message and we will guide you into the right conversation — gently and at your pace.Contact the team "}
+
+## 2026-09-17 15:29:24.151Z navigate
+- url: http://localhost:3000/contact
+- via: pushState
+
+## 2026-09-17 15:30:17.403Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Christians In Pain"}
+
+## 2026-09-17 15:30:17.404Z navigate
+- url: http://localhost:3000/
+- via: pushState
+
+## 2026-09-17 15:30:54.621Z click
+- element: {"tag":"button","role":null,"ariaLabel":"Toggle menu","name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":""}
+
+## 2026-09-17 15:30:56.596Z click
+- element: {"tag":"button","role":null,"ariaLabel":"Toggle menu","name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":""}
+
+## 2026-09-17 15:32:11.501Z click
+- element: {"tag":"button","role":null,"ariaLabel":"Toggle menu","name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":""}
+
+## 2026-09-17 15:32:14.603Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Home"}
+
+## 2026-09-17 15:32:14.604Z navigate
+- url: http://localhost:3000/
+- via: replaceState
+
+## 2026-09-17 15:32:16.932Z click
+- element: {"tag":"button","role":null,"ariaLabel":"Toggle menu","name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":""}
+
+## 2026-09-17 15:32:18.099Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Share Your Story"}
+
+## 2026-09-17 15:32:18.100Z navigate
+- url: http://localhost:3000/share
+- via: pushState
+
+## 2026-09-17 15:32:29.648Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Peer Support"}
+
+## 2026-09-17 15:32:29.649Z navigate
+- url: http://localhost:3000/sessions
+- via: pushState
+
+## 2026-09-17 15:35:05.549Z click
+- element: {"tag":"button","role":null,"ariaLabel":"Toggle menu","name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":""}
+
+## 2026-09-17 15:35:06.916Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Home"}
+
+## 2026-09-17 15:35:06.917Z navigate
+- url: http://localhost:3000/
+- via: pushState
+
+## 2026-09-17 15:36:50.748Z load
+- url: http://localhost:3000/
+
+## 2026-09-17 15:36:54.601Z navigate
+- url: http://localhost:3000/
+- via: replaceState
+
+## 2026-09-17 15:44:08.808Z load
+- url: http://localhost:3000/
+
+## 2026-09-17 15:44:46.073Z load
+- url: http://localhost:3000/
+
+## 2026-09-17 15:45:22.948Z click
+- element: {"tag":"div","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"A first step that takes five minutesNo account. No intake form. No performance. Share what you are carrying, find a session, or simply send a message — and let a community that understands walk with you toward Christ.Share Your StoryTell us what you are facing in your own words. Request prayer, peer support, or simply be heard — no account, no pressure.Share & request prayer Join a Peer Support SessionOne-on-one and small-group gatherings led by trained peers who have walked through illness and come out trusting Christ.See upcoming sessions Reach Out DirectlyNot sure where to start? Send a message and we will guide you into the right conversation — gently and at your pace.Contact the team "}
+
+## 2026-09-17 15:45:25.465Z load
+- url: http://localhost:3000/
+
+## 2026-09-17 15:46:36.637Z click
+- element: {"tag":"p","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Christians In Pain · Peer Support Ministry"}
+
+## 2026-09-17 15:47:03.006Z click
+- element: {"tag":"section","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"900+peers walking togetherWhat we believe about healingHealing comes from God, not from usWe are not healers. We are ordinary Christians who have known sickness, grief, and fear — and who have met the God who meets us in it. We believe he still heals, and we trust him even when he heals differently than we hoped.So we pray for body, mind, and spirit alike. We celebrate physical healing when it comes, and we hold on to Christ when it does not. Spiritual, mental, and emotional transformation is real healing too — and it is where hope begins.SpiritualFaith renewed, identity restored in ChristMentalAnxiety and despair met with truth and communityEmotionalGrief and fear carried, not buried"}
+
+## 2026-09-17 15:47:08.673Z load
+- url: http://localhost:3000/
+
+## 2026-09-17 15:47:20.131Z load
+- url: http://localhost:3000/
+
+## 2026-09-17 15:47:47.088Z click
+- element: {"tag":"div","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Christians In Pain · Peer Support MinistryYou don't have tocarry thisalone.A Christian peer support community for believers living with health challenges. We do not promise a physical cure -- we simply help point you to the God who heals the heart, renews the mind and walks with you every step of the way. Come as you are.Share your story Find a support session“The Lord is near to the brokenhearted and saves the crushed in spirit.”Psalm 34:18"}
+
+## 2026-09-17 15:47:49.118Z load
+- url: http://localhost:3000/
+
+## 2026-09-17 15:48:11.735Z load
+- url: http://localhost:3000/contact
+
+## 2026-09-17 15:48:12.125Z navigate
+- url: http://localhost:3000/contact
+- via: replaceState
+
+## 2026-09-17 15:51:14.470Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Share Your Story"}
+
+## 2026-09-17 15:51:14.499Z navigate
+- url: http://localhost:3000/share
+- via: pushState
+
+## 2026-09-17 15:51:39.097Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Peer Support"}
+
+## 2026-09-17 15:51:39.099Z navigate
+- url: http://localhost:3000/sessions
+- via: pushState
+
+## 2026-09-17 15:52:30.586Z load
+- url: http://localhost:3000/
+
+## 2026-09-17 15:52:30.943Z navigate
+- url: http://localhost:3000/
+- via: replaceState
+
+## 2026-09-17 15:52:51.687Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Home"}
+
+## 2026-09-17 15:52:51.689Z navigate
+- url: http://localhost:3000/
+- via: pushState
+
+## 2026-09-17 15:54:09.233Z click
+- element: {"tag":"p","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Christians In Pain · Faith-Based Peer Support"}
+
+## 2026-09-17 15:54:31.219Z click
+- element: {"tag":"h1","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"You don't have tocarry thisalone."}
+
+## 2026-09-17 15:54:54.823Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Share Your Story"}
+
+## 2026-09-17 15:54:54.825Z navigate
+- url: http://localhost:3000/share
+- via: pushState
+
+## 2026-09-17 15:55:04.350Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Peer Support"}
+
+## 2026-09-17 15:55:04.353Z navigate
+- url: http://localhost:3000/sessions
+- via: pushState
+
+## 2026-09-17 15:55:08.734Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Resources"}
+
+## 2026-09-17 15:55:08.736Z navigate
+- url: http://localhost:3000/resources
+- via: pushState
+
+## 2026-09-17 15:55:12.236Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Contact"}
+
+## 2026-09-17 15:55:12.237Z navigate
+- url: http://localhost:3000/contact
+- via: pushState
+
+## 2026-09-17 15:55:49.635Z focus
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cname","placeholder":"Your name","label":"Full name","value":"","valueLength":0,"text":""}
+
+## 2026-09-17 15:55:50.342Z click
+- element: {"tag":"form","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Send us a messageFull nameEmailI am interested inJoin a peer support sessionOne-on-one supportGeneral questionMessageSend message"}
+
+## 2026-09-17 15:55:50.976Z click
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cname","placeholder":"Your name","label":"Full name","value":"","valueLength":0,"text":""}
+
+## 2026-09-17 15:55:51.411Z focus
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":"email","id":"cemail","placeholder":"you@example.com","label":"Email","value":"","valueLength":0,"text":""}
+
+## 2026-09-17 15:55:51.494Z click
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":"email","id":"cemail","placeholder":"you@example.com","label":"Email","value":"","valueLength":0,"text":""}
+
+## 2026-09-17 15:55:52.295Z focus
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cinterest","placeholder":null,"label":"I am interested in","value":"Join a peer support session","valueLength":27,"text":"Join a peer support sessionOne-on-one supportGeneral question"}
+
+## 2026-09-17 15:55:52.369Z click
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cinterest","placeholder":null,"label":"I am interested in","value":"Join a peer support session","valueLength":27,"text":"Join a peer support sessionOne-on-one supportGeneral question"}
+
+## 2026-09-17 15:55:53.309Z blur
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cinterest","placeholder":null,"label":"I am interested in","value":"Join a peer support session","valueLength":27,"text":"Join a peer support sessionOne-on-one supportGeneral question"}
+
+## 2026-09-17 15:55:53.312Z focus
+- element: {"tag":"textarea","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cmsg","placeholder":"Tell us how we can help or what you are facing.","label":"Message","value":"","valueLength":0,"text":""}
+
+## 2026-09-17 15:55:53.331Z click
+- element: {"tag":"textarea","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cmsg","placeholder":"Tell us how we can help or what you are facing.","label":"Message","value":"","valueLength":0,"text":""}
+
+## 2026-09-17 15:55:57.910Z click
+- element: {"tag":"span","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Peer support line: email (christiansinpain@gmail.com)"}
+
+## 2026-09-17 15:55:59.690Z click
+- element: {"tag":"h2","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Send us a message"}
+
+## 2026-09-17 15:56:00.826Z focus
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cname","placeholder":"Your name","label":"Full name","value":"","valueLength":0,"text":""}
+
+## 2026-09-17 15:56:00.933Z click
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cname","placeholder":"Your name","label":"Full name","value":"","valueLength":0,"text":""}
+
+## 2026-09-17 15:56:01.835Z focus
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":"email","id":"cemail","placeholder":"you@example.com","label":"Email","value":"","valueLength":0,"text":""}
+
+## 2026-09-17 15:56:01.956Z click
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":"email","id":"cemail","placeholder":"you@example.com","label":"Email","value":"","valueLength":0,"text":""}
+
+## 2026-09-17 15:56:02.421Z focus
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cinterest","placeholder":null,"label":"I am interested in","value":"Join a peer support session","valueLength":27,"text":"Join a peer support sessionOne-on-one supportGeneral question"}
+
+## 2026-09-17 15:56:02.556Z click
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cinterest","placeholder":null,"label":"I am interested in","value":"Join a peer support session","valueLength":27,"text":"Join a peer support sessionOne-on-one supportGeneral question"}
+
+## 2026-09-17 15:56:04.413Z change
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cinterest","placeholder":null,"label":"I am interested in","value":"One-on-one support","valueLength":18,"text":"Join a peer support sessionOne-on-one supportGeneral question"}
+
+## 2026-09-17 15:56:04.435Z click
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cinterest","placeholder":null,"label":"I am interested in","value":"One-on-one support","valueLength":18,"text":"Join a peer support sessionOne-on-one supportGeneral question"}
+
+## 2026-09-17 15:56:04.550Z blur
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cinterest","placeholder":null,"label":"I am interested in","value":"One-on-one support","valueLength":18,"text":"Join a peer support sessionOne-on-one supportGeneral question"}
+
+## 2026-09-17 15:56:04.618Z click
+- element: {"tag":"label","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Message"}
+
+## 2026-09-17 15:56:04.619Z focus
+- element: {"tag":"textarea","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cmsg","placeholder":"Tell us how we can help or what you are facing.","label":"Message","value":"","valueLength":0,"text":""}
+
+## 2026-09-17 15:56:04.624Z click
+- element: {"tag":"textarea","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cmsg","placeholder":"Tell us how we can help or what you are facing.","label":"Message","value":"","valueLength":0,"text":""}
+
+## 2026-09-17 15:56:05.287Z focus
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":"email","id":"cemail","placeholder":"you@example.com","label":"Email","value":"","valueLength":0,"text":""}
+
+## 2026-09-17 15:56:05.404Z click
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":"email","id":"cemail","placeholder":"you@example.com","label":"Email","value":"","valueLength":0,"text":""}
+
+## 2026-09-17 15:56:07.623Z click
+- element: {"tag":"label","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"I am interested in"}
+
+## 2026-09-17 15:56:07.630Z focus
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cinterest","placeholder":null,"label":"I am interested in","value":"One-on-one support","valueLength":18,"text":"Join a peer support sessionOne-on-one supportGeneral question"}
+
+## 2026-09-17 15:56:07.636Z click
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cinterest","placeholder":null,"label":"I am interested in","value":"One-on-one support","valueLength":18,"text":"Join a peer support sessionOne-on-one supportGeneral question"}
+
+## 2026-09-17 15:56:07.797Z blur
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cinterest","placeholder":null,"label":"I am interested in","value":"One-on-one support","valueLength":18,"text":"Join a peer support sessionOne-on-one supportGeneral question"}
+
+## 2026-09-17 15:56:07.852Z click
+- element: {"tag":"label","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"I am interested in"}
+
+## 2026-09-17 15:56:07.853Z click
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cinterest","placeholder":null,"label":"I am interested in","value":"One-on-one support","valueLength":18,"text":"Join a peer support sessionOne-on-one supportGeneral question"}
+
+## 2026-09-17 15:56:08.101Z click
+- element: {"tag":"label","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"I am interested in"}
+
+## 2026-09-17 15:56:08.101Z click
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cinterest","placeholder":null,"label":"I am interested in","value":"One-on-one support","valueLength":18,"text":"Join a peer support sessionOne-on-one supportGeneral question"}
+
+## 2026-09-17 15:56:08.319Z click
+- element: {"tag":"label","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"I am interested in"}
+
+## 2026-09-17 15:56:08.319Z click
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cinterest","placeholder":null,"label":"I am interested in","value":"One-on-one support","valueLength":18,"text":"Join a peer support sessionOne-on-one supportGeneral question"}
+
+## 2026-09-17 15:56:08.511Z click
+- element: {"tag":"label","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"I am interested in"}
+
+## 2026-09-17 15:56:08.511Z click
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cinterest","placeholder":null,"label":"I am interested in","value":"One-on-one support","valueLength":18,"text":"Join a peer support sessionOne-on-one supportGeneral question"}
+
+## 2026-09-17 15:56:08.685Z click
+- element: {"tag":"label","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"I am interested in"}
+
+## 2026-09-17 15:56:08.686Z click
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cinterest","placeholder":null,"label":"I am interested in","value":"One-on-one support","valueLength":18,"text":"Join a peer support sessionOne-on-one supportGeneral question"}
+
+## 2026-09-17 15:56:08.862Z click
+- element: {"tag":"label","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"I am interested in"}
+
+## 2026-09-17 15:56:08.862Z click
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cinterest","placeholder":null,"label":"I am interested in","value":"One-on-one support","valueLength":18,"text":"Join a peer support sessionOne-on-one supportGeneral question"}
+
+## 2026-09-17 15:56:09.113Z click
+- element: {"tag":"label","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"I am interested in"}
+
+## 2026-09-17 15:56:09.113Z click
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cinterest","placeholder":null,"label":"I am interested in","value":"One-on-one support","valueLength":18,"text":"Join a peer support sessionOne-on-one supportGeneral question"}
+
+## 2026-09-17 15:56:09.317Z click
+- element: {"tag":"label","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"I am interested in"}
+
+## 2026-09-17 15:56:09.318Z focus
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cinterest","placeholder":null,"label":"I am interested in","value":"One-on-one support","valueLength":18,"text":"Join a peer support sessionOne-on-one supportGeneral question"}
+
+## 2026-09-17 15:56:09.320Z click
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cinterest","placeholder":null,"label":"I am interested in","value":"One-on-one support","valueLength":18,"text":"Join a peer support sessionOne-on-one supportGeneral question"}
+
+## 2026-09-17 15:56:09.449Z blur
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cinterest","placeholder":null,"label":"I am interested in","value":"One-on-one support","valueLength":18,"text":"Join a peer support sessionOne-on-one supportGeneral question"}
+
+## 2026-09-17 15:56:09.543Z click
+- element: {"tag":"label","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"I am interested in"}
+
+## 2026-09-17 15:56:09.544Z click
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cinterest","placeholder":null,"label":"I am interested in","value":"One-on-one support","valueLength":18,"text":"Join a peer support sessionOne-on-one supportGeneral question"}
+
+## 2026-09-17 15:56:09.742Z click
+- element: {"tag":"label","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"I am interested in"}
+
+## 2026-09-17 15:56:09.743Z focus
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cinterest","placeholder":null,"label":"I am interested in","value":"One-on-one support","valueLength":18,"text":"Join a peer support sessionOne-on-one supportGeneral question"}
+
+## 2026-09-17 15:56:09.744Z click
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cinterest","placeholder":null,"label":"I am interested in","value":"One-on-one support","valueLength":18,"text":"Join a peer support sessionOne-on-one supportGeneral question"}
+
+## 2026-09-17 15:56:09.861Z blur
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cinterest","placeholder":null,"label":"I am interested in","value":"One-on-one support","valueLength":18,"text":"Join a peer support sessionOne-on-one supportGeneral question"}
+
+## 2026-09-17 15:56:09.949Z click
+- element: {"tag":"label","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"I am interested in"}
+
+## 2026-09-17 15:56:09.950Z focus
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cinterest","placeholder":null,"label":"I am interested in","value":"One-on-one support","valueLength":18,"text":"Join a peer support sessionOne-on-one supportGeneral question"}
+
+## 2026-09-17 15:56:09.951Z click
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cinterest","placeholder":null,"label":"I am interested in","value":"One-on-one support","valueLength":18,"text":"Join a peer support sessionOne-on-one supportGeneral question"}
+
+## 2026-09-17 15:56:10.163Z blur
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cinterest","placeholder":null,"label":"I am interested in","value":"One-on-one support","valueLength":18,"text":"Join a peer support sessionOne-on-one supportGeneral question"}
+
+## 2026-09-17 15:56:10.244Z click
+- element: {"tag":"label","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"I am interested in"}
+
+## 2026-09-17 15:56:10.244Z click
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cinterest","placeholder":null,"label":"I am interested in","value":"One-on-one support","valueLength":18,"text":"Join a peer support sessionOne-on-one supportGeneral question"}
+
+## 2026-09-17 15:56:10.470Z click
+- element: {"tag":"label","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"I am interested in"}
+
+## 2026-09-17 15:56:10.470Z click
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cinterest","placeholder":null,"label":"I am interested in","value":"One-on-one support","valueLength":18,"text":"Join a peer support sessionOne-on-one supportGeneral question"}
+
+## 2026-09-17 15:56:10.949Z click
+- element: {"tag":"label","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"I am interested in"}
+
+## 2026-09-17 15:56:10.950Z click
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cinterest","placeholder":null,"label":"I am interested in","value":"One-on-one support","valueLength":18,"text":"Join a peer support sessionOne-on-one supportGeneral question"}
+
+## 2026-09-17 15:56:12.743Z click
+- element: {"tag":"label","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"I am interested in"}
+
+## 2026-09-17 15:56:12.744Z focus
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cinterest","placeholder":null,"label":"I am interested in","value":"One-on-one support","valueLength":18,"text":"Join a peer support sessionOne-on-one supportGeneral question"}
+
+## 2026-09-17 15:56:12.745Z click
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cinterest","placeholder":null,"label":"I am interested in","value":"One-on-one support","valueLength":18,"text":"Join a peer support sessionOne-on-one supportGeneral question"}
+
+## 2026-09-17 15:56:13.259Z blur
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cinterest","placeholder":null,"label":"I am interested in","value":"One-on-one support","valueLength":18,"text":"Join a peer support sessionOne-on-one supportGeneral question"}
+
+## 2026-09-17 15:56:13.260Z focus
+- element: {"tag":"textarea","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cmsg","placeholder":"Tell us how we can help or what you are facing.","label":"Message","value":"","valueLength":0,"text":""}
+
+## 2026-09-17 15:56:13.781Z click
+- element: {"tag":"textarea","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cmsg","placeholder":"Tell us how we can help or what you are facing.","label":"Message","value":"","valueLength":0,"text":""}
+
+## 2026-09-17 15:56:13.806Z click
+- element: {"tag":"textarea","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cmsg","placeholder":"Tell us how we can help or what you are facing.","label":"Message","value":"","valueLength":0,"text":""}
+
+## 2026-09-17 15:56:13.812Z click
+- element: {"tag":"textarea","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cmsg","placeholder":"Tell us how we can help or what you are facing.","label":"Message","value":"","valueLength":0,"text":""}
+
+## 2026-09-17 15:56:13.963Z click
+- element: {"tag":"textarea","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cmsg","placeholder":"Tell us how we can help or what you are facing.","label":"Message","value":"","valueLength":0,"text":""}
+
+## 2026-09-17 15:56:15.108Z click
+- element: {"tag":"label","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"I am interested in"}
+
+## 2026-09-17 15:56:15.109Z focus
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cinterest","placeholder":null,"label":"I am interested in","value":"One-on-one support","valueLength":18,"text":"Join a peer support sessionOne-on-one supportGeneral question"}
+
+## 2026-09-17 15:56:15.129Z click
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cinterest","placeholder":null,"label":"I am interested in","value":"One-on-one support","valueLength":18,"text":"Join a peer support sessionOne-on-one supportGeneral question"}
+
+## 2026-09-17 15:56:18.414Z blur
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cinterest","placeholder":null,"label":"I am interested in","value":"One-on-one support","valueLength":18,"text":"Join a peer support sessionOne-on-one supportGeneral question"}
+
+## 2026-09-17 15:56:26.302Z click
+- element: {"tag":"span","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Peer support line: email (christiansinpain@gmail.com)"}
+
+## 2026-09-17 15:56:36.366Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Home"}
+
+## 2026-09-17 15:56:36.369Z navigate
+- url: http://localhost:3000/
+- via: pushState
+
+## 2026-09-17 15:56:40.700Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Share your story "}
+
+## 2026-09-17 15:56:40.706Z navigate
+- url: http://localhost:3000/share
+- via: pushState
+
+## 2026-09-17 15:56:49.995Z focus
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"stopic","placeholder":null,"label":"What are you facing?","value":"Chronic illness/disease","valueLength":23,"text":"Chronic illness/diseaseMental healthFaith and doubtNew diagnosisOther"}
+
+## 2026-09-17 15:56:50.122Z click
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"stopic","placeholder":null,"label":"What are you facing?","value":"Chronic illness/disease","valueLength":23,"text":"Chronic illness/diseaseMental healthFaith and doubtNew diagnosisOther"}
+
+## 2026-09-17 15:56:52.201Z blur
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"stopic","placeholder":null,"label":"What are you facing?","value":"Chronic illness/disease","valueLength":23,"text":"Chronic illness/diseaseMental healthFaith and doubtNew diagnosisOther"}
+
+## 2026-09-17 15:56:52.300Z click
+- element: {"tag":"form","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Share your storyYour nameEmail (optional)What are you facing?Chronic illness/diseaseMental healthFaith and doubtNew diagnosisOtherI would likePrayerPeer supportBothJust want to shareYour story / prayer requestI would like someone to follow up with me about peer support.Keep this private — peer leader only, never shared publicly.Send my story"}
+
+## 2026-09-17 15:56:53.422Z focus
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"sstype","placeholder":null,"label":"I would like","value":"Both","valueLength":4,"text":"PrayerPeer supportBothJust want to share"}
+
+## 2026-09-17 15:56:53.512Z click
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"sstype","placeholder":null,"label":"I would like","value":"Both","valueLength":4,"text":"PrayerPeer supportBothJust want to share"}
+
+## 2026-09-17 15:56:54.074Z click
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"sstype","placeholder":null,"label":"I would like","value":"Both","valueLength":4,"text":"PrayerPeer supportBothJust want to share"}
+
+## 2026-09-17 15:56:54.366Z click
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"sstype","placeholder":null,"label":"I would like","value":"Both","valueLength":4,"text":"PrayerPeer supportBothJust want to share"}
+
+## 2026-09-17 15:56:54.928Z click
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"sstype","placeholder":null,"label":"I would like","value":"Both","valueLength":4,"text":"PrayerPeer supportBothJust want to share"}
+
+## 2026-09-17 15:56:55.555Z blur
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"sstype","placeholder":null,"label":"I would like","value":"Both","valueLength":4,"text":"PrayerPeer supportBothJust want to share"}
+
+## 2026-09-17 15:56:55.556Z focus
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"stopic","placeholder":null,"label":"What are you facing?","value":"Chronic illness/disease","valueLength":23,"text":"Chronic illness/diseaseMental healthFaith and doubtNew diagnosisOther"}
+
+## 2026-09-17 15:56:55.661Z click
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"stopic","placeholder":null,"label":"What are you facing?","value":"Chronic illness/disease","valueLength":23,"text":"Chronic illness/diseaseMental healthFaith and doubtNew diagnosisOther"}
+
+## 2026-09-17 15:56:57.126Z click
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"stopic","placeholder":null,"label":"What are you facing?","value":"Chronic illness/disease","valueLength":23,"text":"Chronic illness/diseaseMental healthFaith and doubtNew diagnosisOther"}
+
+## 2026-09-17 15:57:04.019Z blur
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"stopic","placeholder":null,"label":"What are you facing?","value":"Chronic illness/disease","valueLength":23,"text":"Chronic illness/diseaseMental healthFaith and doubtNew diagnosisOther"}
+
+## 2026-09-17 15:57:04.024Z focus
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"sstype","placeholder":null,"label":"I would like","value":"Both","valueLength":4,"text":"PrayerPeer supportBothJust want to share"}
+
+## 2026-09-17 15:57:04.100Z click
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"sstype","placeholder":null,"label":"I would like","value":"Both","valueLength":4,"text":"PrayerPeer supportBothJust want to share"}
+
+## 2026-09-17 15:57:04.639Z click
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"sstype","placeholder":null,"label":"I would like","value":"Both","valueLength":4,"text":"PrayerPeer supportBothJust want to share"}
+
+## 2026-09-17 15:57:19.605Z blur
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"sstype","placeholder":null,"label":"I would like","value":"Both","valueLength":4,"text":"PrayerPeer supportBothJust want to share"}
+
+## 2026-09-17 15:57:21.809Z focus
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"sstype","placeholder":null,"label":"I would like","value":"Both","valueLength":4,"text":"PrayerPeer supportBothJust want to share"}
+
+## 2026-09-17 15:57:21.842Z blur
+- element: {"tag":"select","role":null,"ariaLabel":null,"name":null,"type":null,"id":"sstype","placeholder":null,"label":"I would like","value":"Both","valueLength":4,"text":"PrayerPeer supportBothJust want to share"}
+
+## 2026-09-17 15:57:21.870Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Home"}
+
+## 2026-09-17 15:57:21.874Z navigate
+- url: http://localhost:3000/
+- via: pushState
+
+## 2026-09-17 15:57:57.090Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Resources"}
+
+## 2026-09-17 15:57:57.093Z navigate
+- url: http://localhost:3000/resources
+- via: pushState
+
+## 2026-09-17 15:58:29.875Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Find a peer support session "}
+
+## 2026-09-17 15:58:29.877Z navigate
+- url: http://localhost:3000/sessions
+- via: pushState
+
+## 2026-09-17 15:58:33.006Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Resources"}
+
+## 2026-09-17 15:58:33.008Z navigate
+- url: http://localhost:3000/resources
+- via: pushState
+
+## 2026-09-17 15:58:36.831Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Visit the portal "}
+
+## 2026-09-17 15:58:36.832Z navigate
+- url: http://localhost:3000/
+- via: pushState
+
+## 2026-09-17 15:58:48.594Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Resources"}
+
+## 2026-09-17 15:58:48.595Z navigate
+- url: http://localhost:3000/resources
+- via: pushState
+
+## 2026-09-17 15:58:57.713Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Visit the portal "}
+
+## 2026-09-17 15:58:57.715Z navigate
+- url: http://localhost:3000/
+- via: pushState
+
+## 2026-09-17 16:00:38.986Z click
+- element: {"tag":"h1","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"You don't have tocarry thisalone."}
+
+## 2026-09-17 16:00:41.249Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Resources"}
+
+## 2026-09-17 16:00:41.261Z navigate
+- url: http://localhost:3000/resources
+- via: pushState
+
+## 2026-09-17 16:02:01.263Z click
+- element: {"tag":"div","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Our main resourceOne hub. Every pain resource in one place.Power Over Pain Portal brings together trusted, practical, and faith-sensitive resources for living with pain all in one easy-to-use hub. Whether you are a young person facing pain for the first time or an adult walking a long road, the portal meets you where you are.It is completely free and available to everyone, regardless of where you live. No referrals, no waiting lists, no barriers — just help, hope, and the tools to keep moving forward.Visit the portal Share your storyFree for everyoneNo cost, no account, no catch. The portal is open to anyone who needs it.For youth & adultsResources tailored to both younger and older people living with pain.Available anywhereNo geographical limits. Wherever you are, the portal meets you there."}
+
+## 2026-09-17 16:02:12.296Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Christians In Pain"}
+
+## 2026-09-17 16:02:12.298Z navigate
+- url: http://localhost:3000/
+- via: pushState
+
+## 2026-09-17 16:02:54.892Z load
+- url: http://localhost:3000/resources
+
+## 2026-09-17 16:02:56.226Z navigate
+- url: http://localhost:3000/resources
+- via: replaceState
+
+## 2026-09-17 16:03:08.832Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Visit the portal "}
+
+## 2026-09-17 16:03:30.233Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Resources"}
+
+## 2026-09-17 16:03:30.235Z navigate
+- url: http://localhost:3000/resources
+- via: pushState
+
+## 2026-09-17 16:03:37.740Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Visit the portal "}
+
+## 2026-09-17 16:03:50.685Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Visit the portal "}
+
+## 2026-09-18 06:28:23.030Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Share Your Story"}
+
+## 2026-09-18 06:28:23.055Z navigate
+- url: http://localhost:3000/share
+- via: pushState
+
