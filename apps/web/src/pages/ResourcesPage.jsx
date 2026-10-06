@@ -9,7 +9,7 @@ import PageHero from '@/components/PageHero';
 const HERO = 'https://images.hostinger.com/cdd24c84-47f7-46c7-8896-7ebee03cf441.png';
 
 const features = [
-    { icon: Gift, t: 'Free for everyone', d: 'No cost, no account, no catch. The portal is open to anyone who needs it.' },
+    { icon: Gift, t: 'Free for everyone', d: 'No cost, no catch. The portal is open to anyone who needs it.' },
     { icon: Users, t: 'For youth & adults', d: 'Resources tailored to both younger and older people living with pain.' },
     { icon: Globe, t: 'Available anywhere', d: 'No geographical limits. Wherever you are, the portal meets you there.' },
 ];
@@ -39,15 +39,10 @@ const ResourcesPage = () => (
                         </h2>
                         <div className="mt-6 space-y-5 text-lg leading-relaxed text-muted-foreground">
                             <p>
-                                Power Over Pain Portal brings together trusted, practical, and faith-sensitive
-                                resources for living with pain all in one easy-to-use hub. Whether you are a young
-                                person facing pain for the first time or an adult walking a long road, the portal
-                                meets you where you are.
-                            </p>
-                            <p>
-                                It is completely free and available to everyone, regardless of where you live. No
-                                referrals, no waiting lists, no barriers — just help, hope, and the tools to keep
-                                moving forward.
+                                The Power Over Pain Portal brings together free evidence-based resources for
+                                people living with pain all in an easy-to-use one-stop shop. Resources include
+                                courses, articles, podcasts, videos, workshops, and peer support. Whether you
+                                are a youth or an adult walking the long road, the portal meets you where you are.
                             </p>
                         </div>
                         <div className="mt-9 flex flex-wrap gap-4">

@@ -4,6 +4,7 @@ import { Loader2, Check, Mail, Users } from 'lucide-react';
 import pb from '@/lib/pocketbaseClient';
 import SiteLayout, { Section } from '@/components/SiteLayout';
 import PageHero from '@/components/PageHero';
+import PrivacyNotice from '@/components/PrivacyNotice';
 
 const HERO = 'https://images.hostinger.com/e7ffed98-47f5-4104-aae6-769ed8c80674.png';
 
@@ -24,12 +25,12 @@ const ContactPage = () => {
         setStatus('loading');
         setError('');
         try {
-            await pb.collection('support_contacts').create(form);
+            await pb.send('/api/contact', { method: 'POST', body: form });
             setStatus('done');
             setForm({ name: '', email: '', phone: '', interest: 'Join a peer support session', message: '' });
         } catch (err) {
             setStatus('idle');
-            setError(err?.message || 'We could not send that. Please try again.');
+            setError(err?.response?.message || err?.message || 'We could not send that. Please try again.');
         }
     };
 
@@ -71,7 +72,7 @@ const ContactPage = () => {
                             <div className="grid gap-6 sm:grid-cols-2">
                                 <div className="flex flex-col gap-2">
                                     <label htmlFor="cname" className="text-sm font-semibold">Full name</label>
-                                    <input id="cname" required value={form.name} onChange={update('name')} className={inputClass} placeholder="Your name" />
+                                    <input id="cname" required maxLength={120} value={form.name} onChange={update('name')} className={inputClass} placeholder="Your name" />
                                 </div>
                                 <div className="flex flex-col gap-2">
                                     <label htmlFor="cemail" className="text-sm font-semibold">Email</label>
@@ -86,9 +87,10 @@ const ContactPage = () => {
                             </div>
                             <div className="flex flex-col gap-2">
                                 <label htmlFor="cmsg" className="text-sm font-semibold">Message</label>
-                                <textarea id="cmsg" required rows={6} value={form.message} onChange={update('message')} className={inputClass} placeholder="Tell us how we can help or what you are facing." />
+                                <textarea id="cmsg" required maxLength={3000} rows={6} value={form.message} onChange={update('message')} className={inputClass} placeholder="Tell us how we can help or what you are facing." />
                             </div>
-                            {error && <p className="text-sm text-destructive">{error}</p>}
+                            <PrivacyNotice />
+                            {error && <p role="alert" className="text-sm text-destructive">{error}</p>}
                             <button
                                 type="submit"
                                 disabled={status === 'loading'}

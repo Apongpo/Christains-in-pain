@@ -4,6 +4,7 @@ import { Loader2, Check } from 'lucide-react';
 import pb from '@/lib/pocketbaseClient';
 import SiteLayout, { Section } from '@/components/SiteLayout';
 import PageHero from '@/components/PageHero';
+import PrivacyNotice from '@/components/PrivacyNotice';
 
 const CIRCLE = 'https://images.hostinger.com/cdd24c84-47f7-46c7-8896-7ebee03cf441.png';
 
@@ -147,6 +148,7 @@ const ShareStoryPage = () => {
                                 <input type="checkbox" checked={form.is_private} onChange={update('is_private')} className="mt-1 h-4 w-4 accent-[hsl(var(--gold))]" />
                                 Keep this private — peer leader only, never shared publicly.
                             </label>
+                            <PrivacyNotice />
                             {error && <p className="text-sm text-destructive">{error}</p>}
                             <button
                                 type="submit"

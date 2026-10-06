@@ -19,7 +19,7 @@ onMailerSend((e) => {
         },
         "from": senderAddress,
         "fromName": e.message.from?.name,
-        "replyTo": senderAddress,
+        "replyTo": e.message.headers?.["Reply-To"] || senderAddress,
         "to": e.message.to[0].address,
     }
 

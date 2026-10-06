@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
-import logo from '@/assets/logo.png';
+import logo from '@/assets/logo.webp';
 const links = [{
   to: '/',
   label: 'Home'
@@ -34,7 +34,7 @@ const SiteLayout = ({
             <header className="sticky top-0 z-40 bg-navy/95 backdrop-blur border-b border-white/10">
                 <Section width="wide" className="flex items-center justify-between py-4">
                     <Link to="/" className="flex items-center gap-3 text-cream">
-                        <img src={logo} alt="Christians In Pain logo" className="h-11 w-11" />
+                        <img src={logo} alt="Christians In Pain logo" width={44} height={44} loading="eager" fetchPriority="high" className="h-11 w-11" />
                         <span className="font-display text-lg font-bold tracking-tight">
                             Christians In Pain
                         </span>
@@ -78,6 +78,9 @@ const SiteLayout = ({
                             {links.map(l => <li key={l.to}>
                                     <Link to={l.to} className="text-warm-gold hover:text-cream">{l.label}</Link>
                                 </li>)}
+                            <li>
+                                <Link to="/privacy" className="text-warm-gold hover:text-cream">Privacy Policy</Link>
+                            </li>
                         </ul>
                     </div>
                     <div>

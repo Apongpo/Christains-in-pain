@@ -1315,3 +1315,190 @@
 ## 2026-09-18 20:19:25.737Z load
 - url: http://localhost:3000/
 
+## 2026-09-18 20:21:26.355Z load
+- url: http://localhost:3000/
+
+## 2026-09-18 20:22:25.736Z load
+- url: http://localhost:3000/
+
+## 2026-09-18 20:22:59.546Z load
+- url: http://localhost:3000/
+
+## 2026-09-18 20:23:19.443Z load
+- url: http://localhost:3000/
+
+## 2026-09-18 20:23:54.587Z load
+- url: http://localhost:3000/
+
+## 2026-09-18 20:24:10.015Z load
+- url: http://localhost:3000/
+
+## 2026-09-18 20:24:25.588Z load
+- url: http://localhost:3000/
+
+## 2026-09-18 20:25:04.935Z load
+- url: http://localhost:3000/
+
+## 2026-09-18 20:26:25.579Z load
+- url: http://localhost:3000/
+
+## 2026-09-18 20:27:25.770Z load
+- url: http://localhost:3000/
+
+## 2026-09-18 20:28:25.782Z load
+- url: http://localhost:3000/
+
+## 2026-09-18 20:29:40.159Z load
+- url: http://localhost:3000/
+
+## 2026-09-18 20:29:55.346Z load
+- url: http://localhost:3000/
+
+## 2026-09-18 20:31:45.245Z load
+- url: http://localhost:3000/
+
+## 2026-09-18 20:31:55.224Z load
+- url: http://localhost:3000/
+
+## 2026-09-18 20:35:25.919Z load
+- url: http://localhost:3000/
+
+## 2026-09-18 20:35:45.381Z load
+- url: http://localhost:3000/
+
+## 2026-10-06 06:26:56.244Z load
+- url: http://localhost:3000/
+
+## 2026-10-06 06:26:57.749Z navigate
+- url: http://localhost:3000/
+- via: replaceState
+
+## 2026-10-06 06:27:28.809Z click
+- element: {"tag":"button","role":null,"ariaLabel":"Toggle menu","name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":""}
+
+## 2026-10-06 06:27:30.031Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Share Your Story"}
+
+## 2026-10-06 06:27:30.034Z navigate
+- url: http://localhost:3000/share
+- via: pushState
+
+## 2026-10-06 07:12:36.039Z load
+- url: http://localhost:3000/contact
+
+## 2026-10-06 07:12:36.627Z navigate
+- url: http://localhost:3000/contact
+- via: replaceState
+
+## 2026-10-06 07:12:59.944Z load
+- url: http://localhost:3000/contact
+
+## 2026-10-06 07:13:14.327Z focus
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cname","placeholder":"Your name","label":"Full name","value":"","valueLength":0,"text":""}
+
+## 2026-10-06 07:13:14.414Z change
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cname","placeholder":"Your name","label":"Full name","value":"Contact wiring test","valueLength":19,"text":""}
+
+## 2026-10-06 07:13:14.415Z blur
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cname","placeholder":"Your name","label":"Full name","value":"Contact wiring test","valueLength":19,"text":""}
+
+## 2026-10-06 07:13:14.416Z focus
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":"email","id":"cemail","placeholder":"you@example.com","label":"Email","value":"","valueLength":0,"text":""}
+
+## 2026-10-06 07:13:14.560Z change
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":"email","id":"cemail","placeholder":"you@example.com","label":"Email","value":"test@example.com","valueLength":16,"text":""}
+
+## 2026-10-06 07:13:14.561Z blur
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":"email","id":"cemail","placeholder":"you@example.com","label":"Email","value":"test@example.com","valueLength":16,"text":""}
+
+## 2026-10-06 07:13:14.562Z focus
+- element: {"tag":"textarea","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cmsg","placeholder":"Tell us how we can help or what you are facing.","label":"Message","value":"","valueLength":0,"text":""}
+
+## 2026-10-06 07:13:14.732Z change
+- element: {"tag":"textarea","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cmsg","placeholder":"Tell us how we can help or what you are facing.","label":"Message","value":"Test of the unconfigured email-service warning.","valueLength":47,"text":"Test of the unconfigured email-service warning."}
+
+## 2026-10-06 07:13:14.732Z blur
+- element: {"tag":"textarea","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cmsg","placeholder":"Tell us how we can help or what you are facing.","label":"Message","value":"Test of the unconfigured email-service warning.","valueLength":47,"text":"Test of the unconfigured email-service warning."}
+
+## 2026-10-06 07:13:14.735Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":"submit","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Send message"}
+
+## 2026-10-06 07:13:14.736Z submit
+- action: http://localhost:3000/contact
+- fields: [{"label":"Full name","type":"text","value":"Contact wiring test","length":19,"redacted":false},{"label":"Email","type":"email","value":"test@example.com","length":16,"redacted":false},{"label":"I am interested in","type":"select-one","value":"Join a peer support session","length":27,"redacted":false},{"label":"Message","type":"textarea","value":"Test of the unconfigured email-service warning.","length":47,"redacted":false},{"label":"[submit]","type":"submit","value":"","length":0,"redacted":false}]
+
+## 2026-10-06 07:13:14.876Z network.error
+- method: POST
+- url: http://localhost:3000/hcgi/platform/api/contact
+- status: 503
+- statusText: Service Unavailable
+- requestBody: {"name":"Contact wiring test","email":"test@example.com","phone":"","interest":"Join a peer support session","message":"Test of the unconfigured email-service warning."}
+- response: 
+    {"data":{},"message":"Email is temporarily unavailable. Please email christiansinpain@gmail.com directly.","status":503}
+    
+- durationMs: 135
+
+## 2026-10-06 07:13:14.877Z console.error
+- text: 
+    Fetch error from http://localhost:3000/hcgi/platform/api/contact: {"data":{},"message":"Email is temporarily unavailable. Please email christiansinpain@gmail.com directly.","status":503}
+    
+
+## 2026-10-06 07:14:04.400Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":"submit","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Send message"}
+
+## 2026-10-06 07:14:04.400Z submit
+- action: http://localhost:3000/contact
+- fields: [{"label":"Full name","type":"text","value":"Contact wiring test","length":19,"redacted":false},{"label":"Email","type":"email","value":"test@example.com","length":16,"redacted":false},{"label":"I am interested in","type":"select-one","value":"Join a peer support session","length":27,"redacted":false},{"label":"Message","type":"textarea","value":"Test of the unconfigured email-service warning.","length":47,"redacted":false},{"label":"[submit]","type":"submit","value":"","length":0,"redacted":false}]
+
+## 2026-10-06 07:14:04.867Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Send another"}
+
+## 2026-10-06 07:27:48.209Z focus
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cname","placeholder":"Your name","label":"Full name","value":"","valueLength":0,"text":""}
+
+## 2026-10-06 07:27:48.300Z click
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cname","placeholder":"Your name","label":"Full name","value":"","valueLength":0,"text":""}
+
+## 2026-10-06 07:27:51.640Z change
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cname","placeholder":"Your name","label":"Full name","value":"beto","valueLength":4,"text":""}
+
+## 2026-10-06 07:27:51.641Z blur
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cname","placeholder":"Your name","label":"Full name","value":"beto","valueLength":4,"text":""}
+
+## 2026-10-06 07:27:51.643Z focus
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":"email","id":"cemail","placeholder":"you@example.com","label":"Email","value":"","valueLength":0,"text":""}
+
+## 2026-10-06 07:27:51.842Z click
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":"email","id":"cemail","placeholder":"you@example.com","label":"Email","value":"","valueLength":0,"text":""}
+
+## 2026-10-06 07:27:58.874Z change
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":"email","id":"cemail","placeholder":"you@example.com","label":"Email","value":"apongpo@gmail.com","valueLength":17,"text":""}
+
+## 2026-10-06 07:27:58.874Z blur
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":"email","id":"cemail","placeholder":"you@example.com","label":"Email","value":"apongpo@gmail.com","valueLength":17,"text":""}
+
+## 2026-10-06 07:27:58.878Z focus
+- element: {"tag":"textarea","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cmsg","placeholder":"Tell us how we can help or what you are facing.","label":"Message","value":"","valueLength":0,"text":""}
+
+## 2026-10-06 07:27:59.083Z click
+- element: {"tag":"textarea","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cmsg","placeholder":"Tell us how we can help or what you are facing.","label":"Message","value":"","valueLength":0,"text":""}
+
+## 2026-10-06 07:28:01.087Z change
+- element: {"tag":"textarea","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cmsg","placeholder":"Tell us how we can help or what you are facing.","label":"Message","value":"hi","valueLength":2,"text":"hi"}
+
+## 2026-10-06 07:28:01.087Z blur
+- element: {"tag":"textarea","role":null,"ariaLabel":null,"name":null,"type":null,"id":"cmsg","placeholder":"Tell us how we can help or what you are facing.","label":"Message","value":"hi","valueLength":2,"text":"hi"}
+
+## 2026-10-06 07:28:01.188Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":"submit","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Send message"}
+
+## 2026-10-06 07:28:01.188Z submit
+- action: http://localhost:3000/contact
+- fields: [{"label":"Full name","type":"text","value":"beto","length":4,"redacted":false},{"label":"Email","type":"email","value":"apongpo@gmail.com","length":17,"redacted":false},{"label":"I am interested in","type":"select-one","value":"Join a peer support session","length":27,"redacted":false},{"label":"Message","type":"textarea","value":"hi","length":2,"redacted":false},{"label":"[submit]","type":"submit","value":"","length":0,"redacted":false}]
+
+## 2026-10-06 07:28:11.949Z click
+- element: {"tag":"span","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Peer support line: email (christiansinpain@gmail.com)"}
+
+## 2026-10-06 07:30:05.155Z click
+- element: {"tag":"ul","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Online peer support sessionsNo account needed to connectPeer support line: email (christiansinpain@gmail.com)"}
+

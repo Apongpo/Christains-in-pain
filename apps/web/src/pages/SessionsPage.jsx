@@ -6,6 +6,7 @@ import Reveal from '@/components/Reveal';
 import pb from '@/lib/pocketbaseClient';
 import SiteLayout, { Section } from '@/components/SiteLayout';
 import PageHero from '@/components/PageHero';
+import PrivacyNotice from '@/components/PrivacyNotice';
 import {
     Dialog,
     DialogContent,
@@ -219,6 +220,7 @@ const SessionsPage = () => {
                                 <label htmlFor="jmsg" className="text-sm font-semibold">Anything we should know? <span className="font-normal text-muted-foreground">(optional)</span></label>
                                 <textarea id="jmsg" rows={3} value={form.message} onChange={update('message')} className={inputClass} placeholder="A sentence is plenty." />
                             </div>
+                            <PrivacyNotice />
                             {error && <p className="text-sm text-destructive">{error}</p>}
                             <button
                                 type="submit"

@@ -1,0 +1,45 @@
+Contact-page email delivery
+==========================
+
+The contact page submits to POST /api/contact. PocketBase validates and saves
+the message in support_contacts and emails christiansinpain@gmail.com.
+Reply-To is the visitor's validated email; From is the configured sender.
+Session sign-ups continue to use support_contacts without sending this email.
+
+Configure a sender once in PocketBase Settings > Mail settings:
+  Sender name: Christians In Pain
+  Sender address: the Gmail account used to send mail
+  Use SMTP mail server: enabled
+  Host: smtp.gmail.com
+  Port: 587
+  Username: the full sender Gmail address
+  Password: a Google app password, not the normal Google account password
+  TLS: STARTTLS (leave the implicit TLS/SSL option off for port 587)
+
+Google app passwords require two-step verification and may not be available
+for some accounts. Alternatively use an authenticated SMTP provider.
+Enter credentials privately in PocketBase, never in frontend code or git.
+Apply the same mail settings on the deployed backend; local settings do not
+configure a separate hosted database.
+
+Use Send test email to verify sender configuration. Then submit a clearly
+labelled test from the contact page and confirm it arrives in the Gmail inbox.
+
+When SMTP is disabled, the existing Hostinger mailer can be used instead if
+BUILDER_MAILER_API_URL, BUILDER_MAILER_API_KEY and
+BUILDER_MAILER_SENDER_ADDRESS are configured on the backend.
+
+Failures are logged and shown to the visitor. Failed mail delivery rolls back
+the new record so retrying does not duplicate it. An SMTP acknowledgement
+means the sending server accepted the message, not that Gmail put it in Inbox.
+There is no automatic retry queue; visitors retry a failed submission.
+The endpoint is limited to five requests per hour per client by PocketBase.
+
+Local development proxies /hcgi/platform to http://127.0.0.1:8090.
+POCKETBASE_DEV_URL can override the development proxy target.
+
+Run hook tests from the repository root:
+  node --test apps\pocketbase\tests\contact-mail.test.cjs apps\pocketbase\tests\contact-mail.integration.test.cjs
+
+The integration test uses an isolated temporary database and local SMTP sink;
+it sends nothing to Gmail and does not change the website's existing records.

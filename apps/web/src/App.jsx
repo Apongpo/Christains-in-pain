@@ -6,6 +6,7 @@ import ShareStoryPage from './pages/ShareStoryPage';
 import SessionsPage from './pages/SessionsPage';
 import ContactPage from './pages/ContactPage';
 import ResourcesPage from './pages/ResourcesPage';
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
                 <Route path="/sessions" element={<SessionsPage />} />
                 <Route path="/contact" element={<ContactPage />} />
                 <Route path="/resources" element={<ResourcesPage />} />
+                <Route path="/privacy" element={<PrivacyPolicyPage />} />
             </Routes>
         </Router>
     );
