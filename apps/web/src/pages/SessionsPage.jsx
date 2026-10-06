@@ -80,18 +80,18 @@ const SessionsPage = () => {
         setStatus('loading');
         setError('');
         try {
-            await pb.collection('support_contacts').create({
+            await pb.send('/api/contact', { method: 'POST', body: {
                 name: form.name,
                 email: form.email,
                 phone: form.phone,
                 interest: 'Join a peer support session',
                 session: selected,
                 message: form.message || `I would like to join: ${selected}`,
-            });
+            } });
             setStatus('done');
         } catch (err) {
             setStatus('idle');
-            setError(err?.message || 'We could not send that. Please try again.');
+            setError(err?.response?.message || err?.message || 'We could not send that. Please try again.');
         }
     };
 
@@ -221,7 +221,7 @@ const SessionsPage = () => {
                                 <textarea id="jmsg" rows={3} value={form.message} onChange={update('message')} className={inputClass} placeholder="A sentence is plenty." />
                             </div>
                             <PrivacyNotice />
-                            {error && <p className="text-sm text-destructive">{error}</p>}
+                            {error && <p role="alert" className="text-sm text-destructive">{error}</p>}
                             <button
                                 type="submit"
                                 disabled={status === 'loading'}

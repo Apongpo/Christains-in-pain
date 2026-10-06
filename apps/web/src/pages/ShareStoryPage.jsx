@@ -35,12 +35,21 @@ const ShareStoryPage = () => {
         setStatus('loading');
         setError('');
         try {
-            await pb.collection('story_submissions').create(form);
+            await pb.send('/api/story', { method: 'POST', body: form });
             setStatus('done');
             setForm({ name: '', email: '', topic: "Chronic illness/disease", support_type: 'Both', story: '', want_followup: false, is_private: true });
         } catch (err) {
             setStatus('idle');
-            setError(err?.message || 'We could not send that. Please try again.');
+            const fieldErrors = Object.values(err?.response?.data || {})
+                .map((field) => field?.message)
+                .filter(Boolean);
+            setError(
+                fieldErrors.length
+                    ? fieldErrors.join(' ')
+                    : !err?.status || err.status >= 500
+                        ? 'We could not save your story because the service is temporarily unavailable. Your text is still here. Please try again later.'
+                        : err?.response?.message || err?.message || 'We could not send that. Please try again.',
+            );
         }
     };
 
@@ -64,7 +73,7 @@ const ShareStoryPage = () => {
                     <h2 className="font-display text-3xl font-bold">How it works</h2>
                     <ol className="mt-8 space-y-7">
                         {[
-                            ['You share', 'Write as much or as little as you want. Mark it private and only our trained peer leader will read it.'],
+                            ['You share', 'Write as much or as little as you want. Your story is stored securely and emailed to our peer support inbox. Private stories are not shared publicly.'],
                             ['We pray & respond', 'Every request is prayed over personally. If you ask for peer support, we will match you to a session or a one-on-one conversation.'],
                             ['We follow up', 'Leave an email and someone will check in on you within a few days \u2014 gently, never pushy.'],
                         ].map(([t, d], i) => (
@@ -115,7 +124,7 @@ const ShareStoryPage = () => {
                             <div className="grid gap-6 sm:grid-cols-2">
                                 <div className="flex flex-col gap-2">
                                     <label htmlFor="sname" className="text-sm font-semibold">Your name</label>
-                                    <input id="sname" required value={form.name} onChange={update('name')} className={inputClass} placeholder="First name is enough" />
+                                    <input id="sname" required maxLength={120} value={form.name} onChange={update('name')} className={inputClass} placeholder="First name is enough" />
                                 </div>
                                 <div className="flex flex-col gap-2">
                                     <label htmlFor="semail" className="text-sm font-semibold">Email <span className="font-normal text-muted-foreground">(optional)</span></label>
@@ -138,7 +147,7 @@ const ShareStoryPage = () => {
                             </div>
                             <div className="flex flex-col gap-2">
                                 <label htmlFor="sstory" className="text-sm font-semibold">Your story / prayer request</label>
-                                <textarea id="sstory" required rows={7} value={form.story} onChange={update('story')} className={inputClass} placeholder="Say as much or as little as you want. There is no right way to say it." />
+                                <textarea id="sstory" required maxLength={5000} rows={7} value={form.story} onChange={update('story')} className={inputClass} placeholder="Say as much or as little as you want. There is no right way to say it." />
                             </div>
                             <label className="flex items-start gap-3 text-sm text-muted-foreground">
                                 <input type="checkbox" checked={form.want_followup} onChange={update('want_followup')} className="mt-1 h-4 w-4 accent-[hsl(var(--gold))]" />
@@ -146,10 +155,10 @@ const ShareStoryPage = () => {
                             </label>
                             <label className="flex items-start gap-3 text-sm text-muted-foreground">
                                 <input type="checkbox" checked={form.is_private} onChange={update('is_private')} className="mt-1 h-4 w-4 accent-[hsl(var(--gold))]" />
-                                Keep this private — peer leader only, never shared publicly.
+                                Keep this private — sent to our peer support inbox, never shared publicly.
                             </label>
                             <PrivacyNotice />
-                            {error && <p className="text-sm text-destructive">{error}</p>}
+                            {error && <p role="alert" className="text-sm text-destructive">{error}</p>}
                             <button
                                 type="submit"
                                 disabled={status === 'loading'}

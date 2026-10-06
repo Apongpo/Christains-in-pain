@@ -72,6 +72,14 @@ test('PocketBase sends contact mail, validates input and rolls back SMTP failure
             path.join(migrations, '1787148000_create_support_collections.js'),
         );
         fs.copyFileSync(
+            path.join(root, 'pb_migrations', '1788200000_update_support_select_values.js'),
+            path.join(migrations, '1788200000_update_support_select_values.js'),
+        );
+        fs.copyFileSync(
+            path.join(root, 'pb_migrations', '1791295800_limit_story_email_requests.js'),
+            path.join(migrations, '1791295800_limit_story_email_requests.js'),
+        );
+        fs.copyFileSync(
             path.join(root, 'pb_migrations', '1791270600_limit_contact_email_requests.js'),
             path.join(migrations, '1791270600_limit_contact_email_requests.js'),
         );
@@ -108,6 +116,51 @@ test('PocketBase sends contact mail, validates input and rolls back SMTP failure
             await delay(100);
         }
         assert.ok(ready, output);
+        const storyResponse = await fetch(`${base}/api/collections/story_submissions/records`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                name: 'Story integration test',
+                email: '',
+                topic: 'Chronic illness/disease',
+                support_type: 'Both',
+                story: 'Test story saved without an account or email.',
+                want_followup: false,
+                is_private: true,
+            }),
+        });
+        assert.equal(storyResponse.status, 200);
+        const savedStory = await storyResponse.json();
+        assert.equal(savedStory.topic, 'Chronic illness/disease');
+        assert.equal(savedStory.is_private, true);
+        assert.equal(messages.length, 0);
+        const storyForm = {
+            name: 'Emailed story test',
+            email: '',
+            topic: 'Mental health',
+            support_type: 'Prayer',
+            story: 'Private integration test story.',
+            want_followup: false,
+            is_private: true,
+        };
+        const submitStory = (body) => fetch(`${base}/api/story`, {
+            method: 'POST', headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(body),
+        });
+        let storyMail = await submitStory({ ...storyForm, is_private: 'false' });
+        assert.equal(storyMail.status, 400, await storyMail.text());
+        storyMail = await submitStory(storyForm);
+        assert.equal(storyMail.status, 200, await storyMail.text());
+        assert.equal(messages.length, 1);
+        assert.match(messages[0], /Private: Yes - do not share publicly/);
+        assert.match(messages[0], /Private integration test story/);
+        assert.doesNotMatch(messages[0], /Reply-To:/i);
+        storyMail = await submitStory({ ...storyForm, email: 'story@example.com', is_private: false, want_followup: true });
+        assert.equal(storyMail.status, 200, await storyMail.text());
+        assert.equal(messages.length, 2);
+        assert.match(messages[1], /Reply-To: story@example\.com/i);
+        assert.match(messages[1], /Follow-up requested: Yes/);
+        messages.length = 0;
         const form = {
             name: 'Integration test',
             email: 'visitor@example.com',
@@ -126,11 +179,30 @@ test('PocketBase sends contact mail, validates input and rolls back SMTP failure
         assert.equal(messages.length, 1);
         assert.match(messages[0], /Reply-To: visitor@example\.com/i);
         assert.match(messages[0], /Test message <not HTML>/);
+        response = await submit({
+            ...form,
+            phone: '555-0100',
+            interest: 'Join a peer support session',
+            session: 'Private Peer Prayer Call',
+            message: 'I would like to join: Private Peer Prayer Call',
+        });
+        assert.equal(response.status, 200, await response.text());
+        assert.equal(messages.length, 2);
+        assert.match(messages[1], /New peer support session request/);
+        assert.match(messages[1], /Session: Private Peer Prayer Call/);
+        assert.match(messages[1], /Phone: 555-0100/);
+        assert.match(messages[1], /Reply-To: visitor@example\.com/i);
         rejectMail = true;
+        storyMail = await submitStory({ ...storyForm, story: 'Must not persist' });
+        assert.equal(storyMail.status, 502, await storyMail.text());
+        storyMail = await submitStory(storyForm);
+        assert.equal(storyMail.status, 502, await storyMail.text());
+        storyMail = await submitStory(storyForm);
+        assert.equal(storyMail.status, 429, await storyMail.text());
         response = await submit({ ...form, message: 'Must roll back' });
         assert.equal(response.status, 502, await response.text());
-        assert.equal(messages.length, 1);
-        for (let i = 0; i < 2; i++) {
+        assert.equal(messages.length, 2);
+        for (let i = 0; i < 1; i++) {
             response = await submit(form);
             assert.equal(response.status, 502, await response.text());
         }
@@ -140,8 +212,11 @@ test('PocketBase sends contact mail, validates input and rolls back SMTP failure
         const { DatabaseSync } = require('node:sqlite');
         const db = new DatabaseSync(path.join(temp, 'data', 'data.db'), { readOnly: true });
         try {
-            assert.equal(db.prepare('SELECT COUNT(*) AS count FROM support_contacts').get().count, 1);
-            assert.equal(db.prepare('SELECT message FROM support_contacts').get().message, form.message);
+            assert.equal(db.prepare('SELECT COUNT(*) AS count FROM story_submissions').get().count, 3);
+            assert.equal(db.prepare('SELECT COUNT(*) AS count FROM story_submissions WHERE story = ?').get('Must not persist').count, 0);
+            assert.equal(db.prepare('SELECT COUNT(*) AS count FROM support_contacts').get().count, 2);
+            assert.equal(db.prepare('SELECT message FROM support_contacts WHERE session = ?').get('').message, form.message);
+            assert.equal(db.prepare('SELECT COUNT(*) AS count FROM support_contacts WHERE session = ?').get('Private Peer Prayer Call').count, 1);
         } finally {
             db.close();
         }

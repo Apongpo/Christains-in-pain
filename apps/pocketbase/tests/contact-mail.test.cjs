@@ -67,13 +67,14 @@ function setup({ smtp = true, env = {}, invalid = false, mailFailure = false, sa
     vm.runInNewContext(hook, {
         routerAdd: (method, url, callback) => {
             assert.equal(method, 'POST');
-            assert.equal(url, '/api/contact');
+            assert.ok(['/api/contact', '/api/story'].includes(url));
             route = callback;
         },
         Record: class {
             constructor() { this.fields = {}; }
             set(key, value) { this.fields[key] = value; }
             getString(key) { return this.fields[key]; }
+            getBool(key) { return this.fields[key]; }
         },
         MailerMessage: class { constructor(message) { Object.assign(this, message); } },
         ApiError,
@@ -84,6 +85,7 @@ function setup({ smtp = true, env = {}, invalid = false, mailFailure = false, sa
         records, messages, errors,
         submit: (body = form) => route({
             app,
+            request: { url: { path: '/api/contact' } },
             requestInfo: () => ({ body }),
             json: (status, body) => ({ status, body }),
         }),
@@ -92,10 +94,10 @@ function setup({ smtp = true, env = {}, invalid = false, mailFailure = false, sa
 
 test('saves and emails contact messages with a fixed recipient and visitor Reply-To', () => {
     const run = setup();
-    const response = run.submit({ ...form, to: 'attacker@example.com', session: 'Ignored' });
+    const response = run.submit({ ...form, to: 'attacker@example.com', session: 'Private Peer Prayer Call' });
     assert.equal(response.status, 200);
     assert.equal(run.records.length, 1);
-    assert.equal(run.records[0].fields.session, undefined);
+    assert.equal(run.records[0].fields.session, 'Private Peer Prayer Call');
     const message = run.messages[0];
     assert.equal(message.to[0].address, 'christiansinpain@gmail.com');
     assert.equal(message.from.address, 'sender@example.com');

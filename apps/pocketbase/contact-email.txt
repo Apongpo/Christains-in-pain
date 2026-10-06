@@ -4,7 +4,14 @@ Contact-page email delivery
 The contact page submits to POST /api/contact. PocketBase validates and saves
 the message in support_contacts and emails christiansinpain@gmail.com.
 Reply-To is the visitor's validated email; From is the configured sender.
-Session sign-ups continue to use support_contacts without sending this email.
+Session sign-ups also submit to POST /api/contact and are saved in
+support_contacts and emailed, including the selected session and phone number.
+Contact and session requests share the contact endpoint's rate limit.
+The story form submits to POST /api/story. New stories and prayer requests,
+including private ones, are saved in story_submissions and emailed to the same
+inbox. Email remains optional; Reply-To is omitted when it is not provided.
+Both endpoints have separate limits of five requests per hour per client.
+Existing database submissions are not resent automatically.
 
 Configure a sender once in PocketBase Settings > Mail settings:
   Sender name: Christians In Pain

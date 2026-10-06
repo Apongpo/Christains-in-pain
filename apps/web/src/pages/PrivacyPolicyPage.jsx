@@ -50,7 +50,8 @@ const PrivacyPolicyPage = () => (
                 <section aria-labelledby="privacy-storage">
                     <h2 id="privacy-storage" className="font-display text-2xl font-bold">Storage and service providers</h2>
                     <p className="mt-4">
-                        Form submissions are stored in our PocketBase database. Contact-page messages
+                        Form submissions are stored in our PocketBase database. Contact-page messages,
+                        peer support session requests and stories or prayer requests, including private submissions,
                         are also emailed to christiansinpain@gmail.com and may be retained in that
                         Gmail mailbox. Database and email backups may contain copies of this information.
                         Submissions are not displayed publicly on this website.
