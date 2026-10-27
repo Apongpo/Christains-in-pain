@@ -1502,3 +1502,28 @@
 ## 2026-10-06 07:30:05.155Z click
 - element: {"tag":"ul","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Online peer support sessionsNo account needed to connectPeer support line: email (christiansinpain@gmail.com)"}
 
+## 2026-10-27 06:56:03.434Z load
+- url: http://localhost:3000/
+
+## 2026-10-27 06:56:03.991Z navigate
+- url: http://localhost:3000/
+- via: replaceState
+
+## 2026-10-27 06:56:04.028Z console.error
+- text: 
+    Warning: React does not recognize the `%s` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `%s` instead. If you accidentally passed it from a parent component, remove it from the DOM element.%s fetchPriority fetchpriority 
+        at img
+        at a
+        at LinkWithRef (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=74a2052c:10927:5)
+        at div
+        at Section (http://localhost:3000/src/components/SiteLayout.jsx:24:3)
+        at header
+        at div
+        at SiteLayout (http://localhost:3000/src/components/SiteLayout.jsx:37:3)
+        at HomePage
+        at RenderedRoute (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=74a2052c:6647:26)
+        at Routes (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=74a2052c:7572:3)
+        at Router (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=74a2052c:7511:13)
+        at BrowserRouter (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=74a2052c:10816:3)
+        at App
+
