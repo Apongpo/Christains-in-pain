@@ -1,6 +1,10 @@
 name = "christains-in-pain"
+main = "worker/index.js"
 compatibility_date = "2026-10-01"
+keep_vars = true
 
 [assets]
 directory = "./dist/apps/web"
+binding = "ASSETS"
 not_found_handling = "single-page-application"
+run_worker_first = ["/hcgi/platform/*"]
