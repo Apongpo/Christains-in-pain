@@ -73,7 +73,7 @@ const ShareStoryPage = () => {
                     <h2 className="font-display text-3xl font-bold">How it works</h2>
                     <ol className="mt-8 space-y-7">
                         {[
-                            ['You share', 'Write as much or as little as you want. Your story is stored securely and emailed to our peer support inbox. Private stories are not shared publicly.'],
+                            ['You share', 'Write as much or as little as you want. Your story is stored in our private database and is not emailed or shown publicly. Email notifications are not set up yet.'],
                             ['We pray & respond', 'Every request is prayed over personally. If you ask for peer support, we will match you to a session or a one-on-one conversation.'],
                             ['We follow up', 'Leave an email and someone will check in on you within a few days \u2014 gently, never pushy.'],
                         ].map(([t, d], i) => (
@@ -105,10 +105,11 @@ const ShareStoryPage = () => {
                             <span className="mx-auto grid h-14 w-14 place-items-center rounded-full bg-[hsl(var(--gold))] text-[hsl(var(--navy-deep))]">
                                 <Check className="h-7 w-7" />
                             </span>
-                            <h2 className="mt-6 font-display text-2xl font-bold">We received it</h2>
+                            <h2 className="mt-6 font-display text-2xl font-bold">Your story was saved</h2>
                             <p className="mt-3 text-muted-foreground">
-                                Your story is with our peer team now. You don&apos;t have to carry this alone — someone
-                                is already praying for you by name.
+                                Your story was saved in our private database. Email notifications are not set up yet,
+                                so if you would like a response, please email{' '}
+                                <a className="underline" href="mailto:christiansinpain@gmail.com">christiansinpain@gmail.com</a>.
                             </p>
                             <button
                                 type="button"
@@ -155,7 +156,7 @@ const ShareStoryPage = () => {
                             </label>
                             <label className="flex items-start gap-3 text-sm text-muted-foreground">
                                 <input type="checkbox" checked={form.is_private} onChange={update('is_private')} className="mt-1 h-4 w-4 accent-[hsl(var(--gold))]" />
-                                Keep this private — sent to our peer support inbox, never shared publicly.
+                                Keep this private — stored in our private database and not shown publicly.
                             </label>
                             <PrivacyNotice />
                             {error && <p role="alert" className="text-sm text-destructive">{error}</p>}

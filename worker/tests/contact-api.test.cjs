@@ -35,11 +35,6 @@ class TestDatabase {
                         this.rows[insertMatch[1]].set(id, values);
                         return {};
                     }
-                    const deleteMatch = sql.match(/DELETE FROM (support_contacts|story_submissions)/);
-                    if (deleteMatch) {
-                        this.rows[deleteMatch[1]].delete(values[0]);
-                        return {};
-                    }
                     throw new Error(`Unexpected run() query: ${sql}`);
                 },
             }),
@@ -51,9 +46,6 @@ function createEnv() {
     return {
         DB: new TestDatabase(),
         RATE_LIMIT_SECRET: 'test-rate-limit-secret',
-        BUILDER_MAILER_API_URL: 'https://mailer.example.test',
-        BUILDER_MAILER_API_KEY: 'test-mailer-key',
-        BUILDER_MAILER_SENDER_ADDRESS: 'sender@example.test',
     };
 }
 
@@ -86,47 +78,28 @@ const story = {
     is_private: true,
 };
 
-test('stores contact form and sends a notification with visitor Reply-To', async (t) => {
+test('stores contact form in D1 without an email service', async () => {
     const env = createEnv();
-    let payload;
-    t.mock.method(globalThis, 'fetch', async (_url, options) => {
-        assert.equal(options.headers.Authorization, 'Bearer test-mailer-key');
-        payload = JSON.parse(options.body);
-        return new Response(null, { status: 200 });
-    });
-
     const response = await handleContactSubmission(request('contact', contact), env, 'contact');
 
     assert.equal(response.status, 200);
     assert.equal(env.DB.rows.support_contacts.size, 1);
-    assert.equal(payload.to, 'christiansinpain@gmail.com');
-    assert.equal(payload.replyTo, contact.email);
-    assert.match(payload.content.text, /Please help\./);
+    assert.deepEqual(await response.json(), { message: 'Your submission has been saved.' });
 });
 
-test('stores private story details and notifies the fixed inbox', async (t) => {
+test('stores private story details in D1 without an email service', async () => {
     const env = createEnv();
-    let payload;
-    t.mock.method(globalThis, 'fetch', async (_url, options) => {
-        payload = JSON.parse(options.body);
-        return new Response(null, { status: 200 });
-    });
-
     const response = await handleContactSubmission(request('story', story), env, 'story');
 
     assert.equal(response.status, 200);
     assert.equal(env.DB.rows.story_submissions.size, 1);
-    assert.equal(payload.replyTo, env.BUILDER_MAILER_SENDER_ADDRESS);
-    assert.match(payload.content.text, /Private: Yes - do not share publicly/);
-    assert.match(payload.content.text, /A private prayer request\./);
+    const savedStory = env.DB.rows.story_submissions.values().next().value;
+    assert.equal(savedStory[6], 0);
+    assert.equal(savedStory[7], 1);
 });
 
-test('rejects invalid submissions without writing or sending email', async (t) => {
+test('rejects invalid submissions without writing to D1', async () => {
     const env = createEnv();
-    t.mock.method(globalThis, 'fetch', async () => {
-        throw new Error('Email must not be sent for invalid submissions');
-    });
-
     const response = await handleContactSubmission(
         request('contact', { ...contact, email: 'not-an-email' }),
         env,
@@ -137,9 +110,8 @@ test('rejects invalid submissions without writing or sending email', async (t) =
     assert.equal(env.DB.rows.support_contacts.size, 0);
 });
 
-test('limits each endpoint to five submissions per IP per hour', async (t) => {
+test('limits each endpoint to five submissions per IP per hour', async () => {
     const env = createEnv();
-    t.mock.method(globalThis, 'fetch', async () => new Response(null, { status: 200 }));
 
     for (let attempt = 0; attempt < 5; attempt++) {
         const response = await handleContactSubmission(request('contact', contact), env, 'contact');
@@ -151,19 +123,19 @@ test('limits each endpoint to five submissions per IP per hour', async (t) => {
     assert.equal(env.DB.rows.support_contacts.size, 5);
 });
 
-test('removes a saved submission when email notification fails', async (t) => {
+test('reports rate-limit configuration errors without accepting a submission', async () => {
     const env = createEnv();
-    t.mock.method(globalThis, 'fetch', async () => new Response('Unavailable', { status: 503 }));
+    delete env.RATE_LIMIT_SECRET;
 
-    const response = await handleContactSubmission(request('story', story), env, 'story');
+    const response = await handleContactSubmission(request('contact', contact), env, 'contact');
 
-    assert.equal(response.status, 502);
-    assert.equal(env.DB.rows.story_submissions.size, 0);
+    assert.equal(response.status, 503);
+    assert.equal(env.DB.rows.support_contacts.size, 0);
 });
 
-test('reports missing mail configuration without accepting a submission', async () => {
+test('reports database write errors without returning success', async () => {
     const env = createEnv();
-    delete env.BUILDER_MAILER_API_KEY;
+    env.DB.failWrites = true;
 
     const response = await handleContactSubmission(request('contact', contact), env, 'contact');
 

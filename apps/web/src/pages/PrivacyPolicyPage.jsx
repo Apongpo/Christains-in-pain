@@ -50,23 +50,22 @@ const PrivacyPolicyPage = () => (
                 <section aria-labelledby="privacy-storage">
                     <h2 id="privacy-storage" className="font-display text-2xl font-bold">Storage and service providers</h2>
                     <p className="mt-4">
-                        Form submissions are stored in our PocketBase database. Contact-page messages,
-                        peer support session requests and stories or prayer requests, including private submissions,
-                        are also emailed to christiansinpain@gmail.com and may be retained in that
-                        Gmail mailbox. Database and email backups may contain copies of this information.
-                        Submissions are not displayed publicly on this website.
+                        New form submissions are stored in a Cloudflare D1 database. They are not
+                        automatically emailed and are not displayed publicly on this website. Older
+                        submissions, if any, may remain in the previous PocketBase database and are
+                        not automatically copied to D1.
                     </p>
                     <p className="mt-4">
                         Services used to operate the website and deliver messages may process information
-                        on our behalf. These include our website and backend hosting services, Google
-                        for Gmail delivery and storage, and Hostinger for website assets. During temporary
-                        public testing, Cloudflare Tunnel carries website traffic to our local server.
+                        on our behalf. These include Cloudflare for website hosting and D1 database
+                        storage, and Hostinger for website assets. If you contact us directly by email,
+                        Google processes that email under its own privacy terms.
                         These providers may process information outside Canada under their own privacy
                         terms and applicable laws.
                     </p>
                     <p className="mt-4">
                         We have not yet established a fixed deletion schedule for submissions and their
-                        email or backup copies. To ask about retention or request deletion, contact us
+                        backups. To ask about retention or request deletion, contact us
                         using the email below. Removal from active records may not immediately remove
                         copies in backups.
                     </p>
@@ -78,8 +77,8 @@ const PrivacyPolicyPage = () => (
                         We do not use advertising cookies, tracking pixels or third-party analytics
                         tools to track your activity. Servers and service providers may process
                         technical information such as your IP address and request details to deliver
-                        the website, diagnose problems and prevent abuse. PocketBase is configured
-                        to retain application logs for up to seven days.
+                        the website, diagnose problems and prevent abuse. Form rate-limiting stores
+                        a one-way keyed identifier rather than the raw visitor IP address.
                     </p>
                     <p className="mt-4">
                         External images are loaded from Hostinger, which receives technical information

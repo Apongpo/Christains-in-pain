@@ -14,12 +14,6 @@ export default {
 			return handleContactSubmission(request, env, 'story');
 		}
 
-		if (!env.POCKETBASE_URL) {
-			return new Response('POCKETBASE_URL is not configured', { status: 503 });
-		}
-		const target = new URL(env.POCKETBASE_URL.replace(/\/+$/, ''));
-		target.pathname = (target.pathname === '/' ? '' : target.pathname) + url.pathname.replace(/^\/hcgi\/platform/, '');
-		target.search = url.search;
-		return fetch(new Request(target, request));
+		return new Response('Not found', { status: 404 });
 	},
 };

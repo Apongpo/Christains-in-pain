@@ -56,8 +56,11 @@ const ContactPage = () => {
                             <span className="mx-auto grid h-14 w-14 place-items-center rounded-full bg-[hsl(var(--gold))] text-[hsl(var(--navy-deep))]">
                                 <Check className="h-7 w-7" />
                             </span>
-                            <h2 className="mt-6 font-display text-2xl font-bold">Message sent</h2>
-                            <p className="mt-3 text-muted-foreground">Someone from our peer support team will be in touch within two business days.</p>
+                            <h2 className="mt-6 font-display text-2xl font-bold">Message saved</h2>
+                            <p className="mt-3 text-muted-foreground">
+                                Your message was saved. Email notifications are not set up yet, so for a reply please email{' '}
+                                <a className="underline" href="mailto:christiansinpain@gmail.com">christiansinpain@gmail.com</a>.
+                            </p>
                             <button
                                 type="button"
                                 onClick={() => setStatus('idle')}

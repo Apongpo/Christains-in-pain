@@ -130,83 +130,9 @@ function parseSubmission(route, body) {
     };
 }
 
-function buildEmail(route, submission, senderAddress) {
-    const isStory = route === 'story';
-    const session = !isStory ? submission.session : '';
-    const subject = isStory
-        ? 'New story / prayer request - Christians In Pain'
-        : session
-            ? 'New peer support session request - Christians In Pain'
-            : 'New contact message - Christians In Pain';
-    const lines = isStory
-        ? [
-            'A visitor shared a story or prayer request.',
-            '',
-            `Name: ${submission.name}`,
-            `Email: ${submission.email || 'Not provided'}`,
-            `Topic: ${submission.topic}`,
-            `Support requested: ${submission.support_type}`,
-            `Follow-up requested: ${submission.want_followup ? 'Yes' : 'No'}`,
-            `Private: ${submission.is_private ? 'Yes - do not share publicly' : 'Not marked private - seek permission before sharing'}`,
-            '',
-            'Story / prayer request:',
-            submission.story,
-        ]
-        : [
-            session
-                ? 'A visitor requested a peer support session.'
-                : 'A visitor sent a message through the contact page.',
-            '',
-            `Name: ${submission.name}`,
-            `Email: ${submission.email}`,
-            `Phone: ${submission.phone || 'Not provided'}`,
-            `Interest: ${submission.interest}`,
-            `Session: ${session || 'Not requested'}`,
-            '',
-            'Message:',
-            submission.message,
-        ];
-
-    return {
-        subject,
-        content: { text: lines.join('\n'), type: 'plain' },
-        from: senderAddress,
-        fromName: 'Christians In Pain',
-        replyTo: submission.email || senderAddress,
-        to: 'christiansinpain@gmail.com',
-    };
-}
-
-async function sendEmail(env, payload) {
-    if (!env.BUILDER_MAILER_API_URL || !env.BUILDER_MAILER_API_KEY || !env.BUILDER_MAILER_SENDER_ADDRESS) {
-        throw new Error('Email service is not configured');
-    }
-
-    const authorization = 'Bearer ' + env.BUILDER_MAILER_API_KEY;
-    const response = await fetch(
-        `${env.BUILDER_MAILER_API_URL.replace(/\/+$/, '')}/api/v2/email`,
-        {
-            method: 'POST',
-            headers: {
-                Authorization: authorization,
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(payload),
-            signal: AbortSignal.timeout(10_000),
-        },
-    );
-
-    if (response.status !== 200) {
-        throw new Error(`Email provider returned status ${response.status}`);
-    }
-}
-
 export async function handleContactSubmission(request, env, route) {
     if (!env.DB) {
         return json({ message: 'Form storage is not configured.' }, 503);
-    }
-    if (!env.BUILDER_MAILER_API_URL || !env.BUILDER_MAILER_API_KEY || !env.BUILDER_MAILER_SENDER_ADDRESS) {
-        return json({ message: 'Email is temporarily unavailable. Please email christiansinpain@gmail.com directly.' }, 503);
     }
 
     const contentLength = Number(request.headers.get('Content-Length') || 0);
@@ -289,20 +215,5 @@ export async function handleContactSubmission(request, env, route) {
         return json({ message: 'We could not save your message. Please try again.' }, 503);
     }
 
-    try {
-        await sendEmail(env, buildEmail(route, submission, env.BUILDER_MAILER_SENDER_ADDRESS));
-    } catch (error) {
-        console.error('Form notification email failed:', error);
-        try {
-            const table = route === 'story' ? 'story_submissions' : 'support_contacts';
-            await env.DB.prepare(`DELETE FROM ${table} WHERE id = ?`).bind(id).run();
-        } catch (rollbackError) {
-            console.error('Could not remove submission after email failure:', rollbackError);
-        }
-        return json({
-            message: 'We could not send your message. Please try again or email christiansinpain@gmail.com directly.',
-        }, 502);
-    }
-
-    return json({ message: 'Message sent.' });
+    return json({ message: 'Your submission has been saved.' });
 }
