@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { Loader2, Check } from 'lucide-react';
-import pb from '@/lib/pocketbaseClient';
+import { submitStory } from '@/lib/submissionApi';
 import SiteLayout, { Section } from '@/components/SiteLayout';
 import PageHero from '@/components/PageHero';
 import PrivacyNotice from '@/components/PrivacyNotice';
@@ -35,7 +35,7 @@ const ShareStoryPage = () => {
         setStatus('loading');
         setError('');
         try {
-            await pb.send('/api/story', { method: 'POST', body: form });
+            await submitStory(form);
             setStatus('done');
             setForm({ name: '', email: '', topic: "Chronic illness/disease", support_type: 'Both', story: '', want_followup: false, is_private: true });
         } catch (err) {

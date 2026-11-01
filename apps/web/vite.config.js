@@ -368,6 +368,25 @@ logger.error = (msg, options) => {
 	loggerError(msg, options);
 }
 
+const formsWorkerDevUrl = process.env.FORMS_WORKER_DEV_URL;
+const serverProxy = formsWorkerDevUrl
+	? {
+		'^/hcgi/platform/api/contact$': { target: formsWorkerDevUrl, changeOrigin: true },
+		'^/hcgi/platform/api/story$': { target: formsWorkerDevUrl, changeOrigin: true },
+		'/hcgi/platform': {
+			target: process.env.POCKETBASE_DEV_URL || 'http://127.0.0.1:8090',
+			changeOrigin: true,
+			rewrite: (requestPath) => requestPath.replace(/^\/hcgi\/platform/, ''),
+		},
+	}
+	: {
+		'/hcgi/platform': {
+			target: process.env.POCKETBASE_DEV_URL || 'http://127.0.0.1:8090',
+			changeOrigin: true,
+			rewrite: (requestPath) => requestPath.replace(/^\/hcgi\/platform/, ''),
+		},
+	};
+
 export default defineConfig({
 	optimizeDeps: {
 		include: allDeps,
@@ -380,13 +399,7 @@ export default defineConfig({
 	],
 	server: {
 		port: 3000,
-		proxy: {
-			'/hcgi/platform': {
-				target: process.env.POCKETBASE_DEV_URL || 'http://127.0.0.1:8090',
-				changeOrigin: true,
-				rewrite: (requestPath) => requestPath.replace(/^\/hcgi\/platform/, ''),
-			},
-		},
+		proxy: serverProxy,
 		cors: { origin: AllowedEditorOrigins },
 		headers: {
 			'Cross-Origin-Embedder-Policy': 'credentialless',

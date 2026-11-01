@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { Loader2, Check, Users, User, Video } from 'lucide-react';
 import Reveal from '@/components/Reveal';
-import pb from '@/lib/pocketbaseClient';
+import { submitContact } from '@/lib/submissionApi';
 import SiteLayout, { Section } from '@/components/SiteLayout';
 import PageHero from '@/components/PageHero';
 import PrivacyNotice from '@/components/PrivacyNotice';
@@ -80,14 +80,14 @@ const SessionsPage = () => {
         setStatus('loading');
         setError('');
         try {
-            await pb.send('/api/contact', { method: 'POST', body: {
+            await submitContact({
                 name: form.name,
                 email: form.email,
                 phone: form.phone,
                 interest: 'Join a peer support session',
                 session: selected,
                 message: form.message || `I would like to join: ${selected}`,
-            } });
+            });
             setStatus('done');
         } catch (err) {
             setStatus('idle');

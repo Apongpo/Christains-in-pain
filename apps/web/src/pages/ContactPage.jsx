@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { Loader2, Check, Mail, Users } from 'lucide-react';
-import pb from '@/lib/pocketbaseClient';
+import { submitContact } from '@/lib/submissionApi';
 import SiteLayout, { Section } from '@/components/SiteLayout';
 import PageHero from '@/components/PageHero';
 import PrivacyNotice from '@/components/PrivacyNotice';
@@ -25,7 +25,7 @@ const ContactPage = () => {
         setStatus('loading');
         setError('');
         try {
-            await pb.send('/api/contact', { method: 'POST', body: form });
+            await submitContact(form);
             setStatus('done');
             setForm({ name: '', email: '', phone: '', interest: 'Join a peer support session', message: '' });
         } catch (err) {
