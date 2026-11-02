@@ -106,7 +106,6 @@ const SessionsPage = () => {
                 eyebrow="Peer Support Sessions"
                 title="Find a session and come as you are"
                 blurb="One-on-one and small group gatherings led by a trained peer who understands what it means to live with a long-term illness yet still trusts God. Confidential, no-pressure, and open to anyone."
-                scripture="&ldquo;Where two or three are gathered in my name, there am I among them.&rdquo; — Matthew 18:20"
                 image={NIGHT}
             />
 
